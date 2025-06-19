@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Home() {
   return (
     <div
@@ -17,9 +18,10 @@ export default function Home() {
           <a href="#" className="hover:underline">
             Services
           </a>
-          <a href="/about" className="hover:underline">
-            Our team
-          </a>
+          <Link href="/about">
+            <span className="hover:underline">Our team</span>
+          </Link>
+
           <a href="#" className="hover:underline">
             Contact
           </a>
@@ -30,8 +32,9 @@ export default function Home() {
       </div>
 
       {/* Centered Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-white text-10xl md:text-7xl font-bold max-w-5xl leading-tight">
+      {/* <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4"> */}
+      <div className="relative z-0 h-full flex flex-col items-center justify-center text-center px-4 pointer-events-none">
+        <h1 className="text-white text-5xl sm:text-6xl md:text-7xl font-bold max-w-5xl leading-tight">
           AI Powered Leasing Agent
         </h1>
         {/* <p className="text-white text-3xl md:text-3xl font-large font-bold mt-6 max-w-4xl"> */}
