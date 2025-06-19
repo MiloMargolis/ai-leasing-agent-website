@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div
-      className="h-screen w-full bg-cover bg-center relative"
+      className="h-screen w-full bg-cover bg-center relative pb-0"
       style={{ backgroundImage: "url('/hero.jpg')" }}
     >
       {/* Top Nav */}
@@ -17,8 +17,8 @@ export default function Home() {
           <a href="#" className="hover:underline">
             Services
           </a>
-          <a href="#" className="hover:underline">
-            About Us
+          <a href="/about" className="hover:underline">
+            Our team
           </a>
           <a href="#" className="hover:underline">
             Contact
@@ -37,7 +37,7 @@ export default function Home() {
         {/* <p className="text-white text-3xl md:text-3xl font-large font-bold mt-6 max-w-4xl"> */}
         <p className="text-white text-3xl md:text-3xl font-large font-bold mt-6 max-w-4xl drop-shadow-2xl">
           Qualify leads, automate conversations, and handle follow-ups — so
-          agents can focus on closing.
+          human agents can focus on closing.
         </p>
         <a
           href="https://calendly.com/milomargolis4/30min?month=2025-06"
@@ -51,32 +51,32 @@ export default function Home() {
       </div>
 
       {/* Partner Logos Section */}
-      <section className="w-full bg-gradient-to-b from-gray-100 to-white py-24 px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
+      <section className="w-full bg-gradient-to-r from-[#eceff4] via-[#e7ebf0] to-[#f2f4f7] py-20 px-6 md:px-12">
+        <h2 className="text-center text-4xl font-semibold text-gray-800 mb-12">
           Trusted by Boston Leasing Teams
         </h2>
-        <div className="flex flex-wrap justify-center items-center gap-12 px-4">
+
+        <div className="partner-scrollbar flex flex-wrap justify-center items-center gap-x-30 gap-y-20 max-w-6xl mx-auto">
           <img
-            src="file.svg"
-            alt="Partner 1"
-            className="h-16 grayscale hover:grayscale-0 transition"
+            src="Cornerstone.svg"
+            alt="Cornerstone Real Estate"
+            className="h-20 w-auto opacity-90 hover:opacity-100 transition duration-300"
           />
           <img
-            src="file.svg"
-            alt="Partner 2"
-            className="h-16 grayscale hover:grayscale-0 transition"
+            src="Fisher.svg"
+            alt="Fisher Realty LLC"
+            className="h-20 w-auto opacity-90 hover:opacity-100 transition duration-300"
           />
           <img
-            src="file.svg"
-            alt="Partner 3"
-            className="h-16 grayscale hover:grayscale-0 transition"
+            src="Encore.svg"
+            alt="Encore Realty"
+            className="h-20 max-w-[170px] w-auto opacity-90 hover:opacity-100 transition duration-300"
           />
           <img
-            src="file.svg"
-            alt="Partner 4"
-            className="h-16 grayscale hover:grayscale-0 transition"
+            src="Roos.svg"
+            alt="Mark Roos Realty"
+            className="h-20 w-auto opacity-90 hover:opacity-100 transition duration-300"
           />
-          {/* Add more logos as needed */}
         </div>
       </section>
     </div>
