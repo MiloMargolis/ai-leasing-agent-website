@@ -1,64 +1,87 @@
-import Link from "next/link";
 export default function Home() {
+  const team = [
+    { name: "Milo Margolis", role: "Founder", image: "/person1.jpg" },
+    { name: "Rowan Frew", role: "Sales", image: "/person2.jpg" },
+    {
+      name: "David Rooney",
+      role: "Business Development",
+      image: "/person3.jpg",
+    },
+    { name: "Josh Segal", role: "Engineering", image: "/person4.jpg" },
+    { name: "Lubaina Malvi", role: "Engineering", image: "/person5.jpg" },
+    { name: "Willem Shak", role: "Engineering", image: "/person6.jpg" },
+    {
+      name: "Jesse Goldberg",
+      role: "Business Development",
+      image: "/person7.jpg",
+    },
+  ];
+
   return (
-    <div
-      className="h-screen w-full bg-cover bg-center relative pb-0"
-      style={{ backgroundImage: "url('/hero.jpg')" }}
-    >
-      {/* Top Nav */}
-      <div className="absolute top-0 left-0 right-0 flex justify-between items-center px-8 py-6 z-10 text-white">
-        <div className="flex items-center space-x-3">
-          <img src="/Logo.svg" alt="HouseFly logo" className="h-8" />
-          <span className="text-xl font-bold">HouseFly</span>
-        </div>
-        <div className="space-x-8 hidden text-lg md:flex">
-          <a href="#" className="hover:underline">
-            Home
-          </a>
-          <a href="#" className="hover:underline">
-            Services
-          </a>
-          <Link href="/about">
-            <span className="hover:underline">Our team</span>
-          </Link>
+    <div className="w-full">
+      {/* Hero Section */}
+      <div
+        className="h-screen w-full bg-cover bg-center relative pb-0"
+        style={{ backgroundImage: "url('/hero.jpg')" }}
+      >
+        {/* Top Nav */}
+        <div className="absolute top-0 left-0 right-0 flex justify-between items-center px-8 py-6 z-50 text-white pointer-events-auto">
+          <div className="flex items-center space-x-3">
+            <img src="/Logo.svg" alt="HouseFly logo" className="h-8" />
+            <span className="text-xl font-bold">HouseFly</span>
+          </div>
+          <div className="space-x-8 hidden text-lg md:flex">
+            <a href="#" className="hover:underline">
+              Home
+            </a>
+            <a href="services" className="hover:underline">
+              Services
+            </a>
+            <a href="#partners" className="hover:underline">
+              Our partners
+            </a>
 
-          <a href="#" className="hover:underline">
-            Contact
-          </a>
-          <a href="#" className="text-xl">
-            <img src="/login_head.svg"></img>
+            <a href="#team" className="hover:underline">
+              Our team
+            </a>
+            <a href="#contact" className="hover:underline">
+              Contact
+            </a>
+            <a href="#" className="text-xl">
+              <img src="/login_head.svg" />
+            </a>
+          </div>
+        </div>
+
+        {/* Centered Content */}
+        <div className="relative z-0 h-full flex flex-col items-center justify-center text-center px-4 pointer-events-none">
+          <h1 className="text-white text-5xl sm:text-6xl md:text-7xl font-bold max-w-5xl leading-tight">
+            AI Powered Leasing Agent
+          </h1>
+          <p className="text-white text-3xl md:text-3xl font-large font-bold mt-6 max-w-4xl drop-shadow-2xl">
+            Qualify leads, automate conversations, and handle follow-ups — so
+            human agents can focus on closing.
+          </p>
+          <a
+            href="https://calendly.com/milomargolis4/30min?month=2025-06"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="mt-12 px-12 py-4 rounded-full bg-[#6C63FF] text-white text-2xl font-semibold hover:bg-indigo-600 shadow-lg pointer-events-auto">
+              Book a Demo
+            </button>
           </a>
         </div>
-      </div>
-
-      {/* Centered Content */}
-      {/* <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4"> */}
-      <div className="relative z-0 h-full flex flex-col items-center justify-center text-center px-4 pointer-events-none">
-        <h1 className="text-white text-5xl sm:text-6xl md:text-7xl font-bold max-w-5xl leading-tight">
-          AI Powered Leasing Agent
-        </h1>
-        {/* <p className="text-white text-3xl md:text-3xl font-large font-bold mt-6 max-w-4xl"> */}
-        <p className="text-white text-3xl md:text-3xl font-large font-bold mt-6 max-w-4xl drop-shadow-2xl">
-          Qualify leads, automate conversations, and handle follow-ups — so
-          human agents can focus on closing.
-        </p>
-        <a
-          href="https://calendly.com/milomargolis4/30min?month=2025-06"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="mt-12 px-12 py-4 rounded-full bg-[#6C63FF] text-white text-2xl font-semibold hover:bg-indigo-600 shadow-lg">
-            Book a Demo
-          </button>
-        </a>
       </div>
 
       {/* Partner Logos Section */}
-      <section className="w-full bg-gradient-to-r from-[#eceff4] via-[#e7ebf0] to-[#f2f4f7] py-20 px-6 md:px-12">
+      <section
+        id="partners"
+        className="w-full bg-gradient-to-r from-[#eceff4] via-[#e7ebf0] to-[#f2f4f7] py-20 px-6 md:px-12"
+      >
         <h2 className="text-center text-4xl font-semibold text-gray-800 mb-12">
           Trusted by Boston Leasing Teams
         </h2>
-
         <div className="partner-scrollbar flex flex-wrap justify-center items-center gap-x-30 gap-y-20 max-w-6xl mx-auto">
           <img
             src="Cornerstone.svg"
@@ -80,6 +103,162 @@ export default function Home() {
             alt="Mark Roos Realty"
             className="h-20 w-auto opacity-90 hover:opacity-100 transition duration-300"
           />
+        </div>
+      </section>
+      {/* Services Section */}
+
+      <section id="services" className="bg-[#f3f4f6] py-24 px-6 md:px-16">
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
+          Book more with less
+        </h2>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
+            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
+              24/7 Response
+            </h3>
+            <p className="text-xl font-semibold text-gray-800">
+              AI handles leads instantly
+            </p>
+            <p className="text-sm text-gray-600 mt-3">
+              Auto-replies and tour booking with no lag, no missed messages.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
+            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
+              Follow-up Automation
+            </h3>
+            <p className="text-xl font-semibold text-gray-800">
+              Never lose a warm lead
+            </p>
+            <p className="text-sm text-gray-600 mt-3">
+              We track, remind, and re-engage across SMS + email.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
+            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
+              Human Escalation
+            </h3>
+            <p className="text-xl font-semibold text-gray-800">
+              Loop in your team when needed
+            </p>
+            <p className="text-sm text-gray-600 mt-3">
+              Only real agents step in when the AI needs a hand.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
+            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
+              Calendar Integration
+            </h3>
+            <p className="text-xl font-semibold text-gray-800">
+              Book right into your system
+            </p>
+            <p className="text-sm text-gray-600 mt-3">
+              We connect to your team’s calendar or showings tool.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
+            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
+              Data Sync
+            </h3>
+            <p className="text-xl font-semibold text-gray-800">
+              Push to your CRM
+            </p>
+            <p className="text-sm text-gray-600 mt-3">
+              Every lead gets logged and enriched with insights.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
+            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
+              Performance Tracking
+            </h3>
+            <p className="text-xl font-semibold text-gray-800">
+              See what’s working
+            </p>
+            <p className="text-sm text-gray-600 mt-3">
+              Track booked tours, lead response time, and conversion lift.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section id="team" className="bg-white py-24 px-6 md:px-12">
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
+          Meet the Team
+        </h2>
+        <p className="text-center text-gray-600 max-w-6xl mx-auto mb-16 text-lg">
+          HouseFly was created by a small team of Northeastern students who saw
+          a problem in the Boston real estate market. Most leads never convert,
+          and those that do often require dozens of back and forth messages and
+          coordination. That's why we created a platform that automates
+          communication, qualifies leads, and optimizes listings, so the human
+          agents can focus on closing deals, not managing inboxes.
+        </p>
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
+          {team.map((person, i) => (
+            <div key={i} className="flex flex-col items-center text-center">
+              <img
+                src={person.image}
+                alt={person.name}
+                className="w-32 h-32 rounded-full object-cover shadow-md mb-4"
+              />
+              <h3 className="text-xl font-semibold text-gray-800">
+                {person.name}
+              </h3>
+              <p className="text-gray-500">{person.role}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        className="bg-[#f9fafb] py-20 px-6 md:px-12 border-t border-gray-200"
+      >
+        <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
+          Contact Us
+        </h2>
+        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-8 text-lg">
+          Reach out anytime. We’re happy to chat.
+        </p>
+
+        <div className="text-center text-gray-700 mb-8 space-y-2">
+          <p>
+            Email:{" "}
+            <a
+              href="houseflyoutreach@gmail.com"
+              className="text-indigo-600 hover:underline"
+            >
+              houseflyoutreach@gmail.com
+            </a>
+          </p>
+          <p>
+            Phone:{" "}
+            <a
+              href="tel:+1 (617)-752-2174"
+              className="text-indigo-600 hover:underline"
+            >
+              (617) 752 2174
+            </a>
+          </p>
+        </div>
+
+        <div className="text-center">
+          <a
+            href="https://calendly.com/milomargolis4/30min?month=2025-06"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="px-10 py-3 rounded-full bg-[#6C63FF] text-white text-lg font-semibold hover:bg-indigo-600 shadow-md">
+              Book a Demo
+            </button>
+          </a>
         </div>
       </section>
     </div>
