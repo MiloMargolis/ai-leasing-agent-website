@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
   const team = [
     { name: "Milo Margolis", role: "Founder", image: "/person1.jpg" },
-    { name: "Rowan Frew", role: "Business Developmen", image: "/person2.jpg" },
+    { name: "Rowan Frew", role: "Business Development", image: "/person2.jpg" },
     {
       name: "David Rooney",
       role: "Business Development",
