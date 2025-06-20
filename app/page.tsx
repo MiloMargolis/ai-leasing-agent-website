@@ -100,7 +100,7 @@ export default function Home() {
                 <img
                   src="/Encore.svg"
                   alt="Encore Realty"
-                  className="h-16 w-auto inline-block relative top-1"
+                  className="h-20 w-auto scale-65 inline-block"
                 />
 
                 <img
@@ -121,7 +121,7 @@ export default function Home() {
           Book more with less
         </h2> */}
         <h2 className="text-4xl font-bold text-left text-gray-800 mb-16 pl-7">
-          Book more with less
+          Convert more with less
         </h2>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
