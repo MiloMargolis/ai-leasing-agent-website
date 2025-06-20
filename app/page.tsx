@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function Home() {
   const team = [
     { name: "Milo Margolis", role: "Founder", image: "/person1.jpg" },
@@ -79,29 +81,39 @@ export default function Home() {
         <h2 className="text-center text-4xl font-semibold text-gray-800 mb-12">
           Trusted by Boston Leasing Teams
         </h2>
-        <div className="partner-scrollbar flex flex-wrap justify-center items-center gap-x-30 gap-y-20 max-w-6xl mx-auto">
-          <img
-            src="Cornerstone.svg"
-            alt="Cornerstone Real Estate"
-            className="h-20 w-auto opacity-90 hover:opacity-100 transition duration-300"
-          />
-          <img
-            src="Fisher.svg"
-            alt="Fisher Realty LLC"
-            className="h-20 w-auto opacity-90 hover:opacity-100 transition duration-300"
-          />
-          <img
-            src="Encore.svg"
-            alt="Encore Realty"
-            className="h-20 max-w-[170px] w-auto opacity-90 hover:opacity-100 transition duration-300"
-          />
-          <img
-            src="Roos.svg"
-            alt="Mark Roos Realty"
-            className="h-20 w-auto opacity-90 hover:opacity-100 transition duration-300"
-          />
+
+        <div className="overflow-hidden w-full">
+          <div className="flex gap-16 animate-scroll whitespace-nowrap">
+            {/* Duplicate logo set for seamless looping */}
+            {[...Array(2)].map((_, i) => (
+              <React.Fragment key={i}>
+                <img
+                  src="/Cornerstone.svg"
+                  alt="Cornerstone Real Estate"
+                  className="h-20 w-auto inline-block"
+                />
+                <img
+                  src="/Fisher.svg"
+                  alt="Fisher Realty LLC"
+                  className="h-20 w-auto inline-block"
+                />
+                <img
+                  src="/Encore.svg"
+                  alt="Encore Realty"
+                  className="h-16 w-auto inline-block relative top-1"
+                />
+
+                <img
+                  src="/Roos.svg"
+                  alt="Mark Roos Realty"
+                  className="h-20 w-auto inline-block"
+                />
+              </React.Fragment>
+            ))}
+          </div>
         </div>
       </section>
+
       {/* Services Section */}
 
       <section id="services" className="bg-[#f3f4f6] py-24 px-6 md:px-16">
