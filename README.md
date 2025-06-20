@@ -53,6 +53,6 @@ We take 20% of the agent’s broker fee for any lead we help convert.
 - Tiered based on # of listings or agents
 
 ### Inspiration
-Having had the opportunity to connect with the founders of both of these incredible companies, we’ve learned a lot from how they’re approaching automation in the trades and in real estate.
+We've had the opportunity to connect with the founders of both of these incredible companies, we’ve learned a lot from how they’re approaching automation in the trades and in real estate.
 - [Revin.ai](https://www.revin.ai/)  
 - [ModernRealty.io](https://www.modernrealty.io/)
