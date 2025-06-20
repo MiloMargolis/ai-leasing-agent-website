@@ -12,7 +12,7 @@ Most leads never convert, and those that do often require dozens of back and for
 
 ### Solution
 
-Create an integrated platform that automates student communication, qualifies leads, and optimizes listings across platforms. The goal is for (human) agents to focus entirely on closing deals, not managing inboxes.
+Create an integrated platform that automates prospect communication, qualifies leads, and optimizes listings across platforms. The goal is for (human) agents to focus entirely on closing deals, not managing inboxes.
 
 ---
 
