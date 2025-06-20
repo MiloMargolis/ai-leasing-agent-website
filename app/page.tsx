@@ -34,7 +34,7 @@ export default function Home() {
             <a href="#" className="hover:underline">
               Home
             </a>
-            <a href="services" className="hover:underline">
+            <a href="#services" className="hover:underline">
               Services
             </a>
             <a href="#partners" className="hover:underline">
@@ -46,9 +46,6 @@ export default function Home() {
             </a>
             <a href="#contact" className="hover:underline">
               Contact
-            </a>
-            <a href="#" className="text-xl">
-              <img src="/login_head.svg" />
             </a>
           </div>
         </div>
@@ -108,7 +105,10 @@ export default function Home() {
       {/* Services Section */}
 
       <section id="services" className="bg-[#f3f4f6] py-24 px-6 md:px-16">
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
+        {/* <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
+          Book more with less
+        </h2> */}
+        <h2 className="text-4xl font-bold text-left text-gray-800 mb-16 pl-7">
           Book more with less
         </h2>
 
