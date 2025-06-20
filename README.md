@@ -2,7 +2,7 @@
 
 ---
 
-**Problem Statement**  
+### Problem Statement 
 
 Real estate agents in the student housing market waste hours with manual follow-ups, answering repetitive questions, and managing leads in spreadsheets.
 
