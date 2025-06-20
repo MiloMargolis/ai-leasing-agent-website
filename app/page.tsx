@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
   const team = [
     { name: "Milo Margolis", role: "Founder", image: "/person1.jpg" },
-    { name: "Rowan Frew", role: "Sales", image: "/person2.jpg" },
+    { name: "Rowan Frew", role: "Business Developmen", image: "/person2.jpg" },
     {
       name: "David Rooney",
       role: "Business Development",
@@ -106,6 +106,11 @@ export default function Home() {
                 <img
                   src="/Roos.svg"
                   alt="Mark Roos Realty"
+                  className="h-20 w-auto inline-block"
+                />
+                <img
+                  src="/nextgen.svg"
+                  alt="Nextgen Realty"
                   className="h-20 w-auto inline-block"
                 />
               </React.Fragment>
