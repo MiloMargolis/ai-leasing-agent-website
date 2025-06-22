@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "HouseFly AI",
   description:
     "Automated lead management and follow-up for real estate agents.",
+  icons: {
+    icon: "logo.svg",
+  },
 };
 
 export default function RootLayout({
