@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Automated lead management and follow-up for real estate agents.",
   icons: {
-    icon: "logo.svg",
+    icon: "Logo.svg",
   },
 };
 
