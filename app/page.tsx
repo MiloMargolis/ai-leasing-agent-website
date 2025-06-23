@@ -81,40 +81,84 @@ export default function Home() {
         <h2 className="text-center text-4xl font-semibold text-gray-800 mb-12">
           Trusted by Boston Leasing Teams
         </h2>
-
-        <div className="overflow-hidden w-full">
-          <div className="flex gap-16 animate-scroll whitespace-nowrap">
-            {/* Duplicate logo set for seamless looping */}
-            {[...Array(2)].map((_, i) => (
-              <React.Fragment key={i}>
+        <div className="logo-container">
+          <div className="logo-scroll">
+            <div className="logo-scroll__wrapper">
+              <div className="logo-item">
                 <img
                   src="/Cornerstone.svg"
                   alt="Cornerstone Real Estate"
                   className="h-20 w-auto inline-block"
                 />
+              </div>
+              <div className="logo-item">
                 <img
                   src="/Fisher.svg"
                   alt="Fisher Realty LLC"
                   className="h-20 w-auto inline-block"
                 />
+              </div>
+              <div className="logo-item">
                 <img
                   src="/Encore.svg"
                   alt="Encore Realty"
                   className="h-20 w-auto scale-65 inline-block"
                 />
-
+              </div>
+              <div className="logo-item">
                 <img
                   src="/Roos.svg"
                   alt="Mark Roos Realty"
                   className="h-20 w-auto inline-block"
                 />
+              </div>
+              <div className="logo-item">
                 <img
                   src="/nextgen.svg"
                   alt="Nextgen Realty"
+                  className="h-20 w-auto scale-65 inline-block"
+                />
+              </div>
+            </div>
+
+            { /* Duplicate logo set for seamless looping */}
+            <div className="logo-scroll__wrapper">
+              <div className="logo-item">
+                <img
+                  src="/Cornerstone.svg"
+                  alt="Cornerstone Real Estate"
                   className="h-20 w-auto inline-block"
                 />
-              </React.Fragment>
-            ))}
+              </div>
+              <div className="logo-item">
+                <img
+                  src="/Fisher.svg"
+                  alt="Fisher Realty LLC"
+                  className="h-20 w-auto inline-block"
+                />
+              </div>
+              <div className="logo-item">
+                <img
+                  src="/Encore.svg"
+                  alt="Encore Realty"
+                  className="h-20 w-auto scale-65 inline-block"
+                />
+              </div>
+              <div className="logo-item">
+                <img
+                  src="/Roos.svg"
+                  alt="Mark Roos Realty"
+                  className="h-20 w-auto inline-block"
+                />
+              </div>
+              <div className="logo-item">
+                <img
+                  src="/nextgen.svg"
+                  alt="Nextgen Realty"
+                  className="h-20 w-auto scale-65 inline-block"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -18,20 +18,7 @@
     --foreground: #ededed;
   }
 }
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
 
-.animate-scroll {
-  animation: scroll 20s linear infinite;
-  display: flex;
-  width: fit-content;
-}
 body {
   background: var(--background);
   color: var(--foreground);
@@ -39,4 +26,76 @@ body {
 }
 html {
   scroll-behavior: smooth;
+}
+
+/* From https://jsdev.space/logo-scroll-css/#step-1-html-structure */
+/* Container to limit the scroll width */
+.logo-container {
+  /* Setting custom properties for logo dimensions, spacing, and animation duration */
+  --logo-width: 200px; /* Width of each logo */
+  --logo-height: 100px; /* Height of each logo */
+  --gap: calc(
+    var(--logo-width) / 14
+  ); /* Space between logos, calculated based on logo width */
+  --duration: 15s; /* Duration of the scroll animation */
+  --scroll-start: 0; /* Start position of scroll animation */
+  --scroll-end: calc(-100% - var(--gap)); /* End position of scroll animation */
+
+  display: flex; /* Aligns children in a row */
+  flex-direction: column; /* Stacks content vertically */
+  gap: var(--gap); /* Adds space between child elements */
+  margin: auto; /* Centers container horizontally */
+  max-width: 100vw; /* Limits width to the viewport */
+}
+
+/* Scrolling area */
+.logo-scroll {
+  display: flex; /* Aligns logos in a horizontal row */
+  overflow: hidden; /* Hides overflow to create infinite scroll effect */
+  user-select: none; /* Disables text selection */
+  gap: var(--gap); /* Space between logos */
+  mask-image: linear-gradient(
+    to right,
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 30%,
+    hsl(0 0% 0% / 1) 70%,
+    hsl(0 0% 0% / 0)
+  ); /* Adds a gradient mask to fade edges */
+}
+
+.logo-scroll__wrapper {
+  flex-shrink: 0; /* Prevents wrapper from shrinking */
+  display: flex; /* Aligns logos horizontally */
+  align-items: center; /* Centers logos vertically */
+  justify-content: space-around; /* Distributes logos evenly */
+  gap: var(--gap); /* Adds spacing between logos */
+  min-width: 100%; /* Wrapper width covers full viewport */
+  animation: scroll var(--duration) linear infinite; /* Infinite scrolling animation */
+}
+
+.logo-scroll:hover .logo-scroll__wrapper {
+  animation-play-state: paused; /* Pauses animation when wrapper is hovered */
+}
+
+/* Logo styling */
+.logo-item {
+  width: var(--logo-width); /* Sets width of each logo */
+  height: var(--logo-height); /* Sets height of each logo */
+  /* transition: transform 0.5s; Smooth scaling effect */
+  background-color: blue; /* Background color for logos */
+  border-radius: 4px; /* Rounds the logo corners */
+}
+
+.logo-scroll .logo-item:hover {
+  transform: scale(1.05); /* Slightly enlarges logo when hovered */
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  from {
+    transform: translateX(var(--scroll-start)); /* Animation start position */
+  }
+  to {
+    transform: translateX(var(--scroll-end)); /* Animation end position */
+  }
 }
