@@ -60,7 +60,7 @@ html {
     hsl(0 0% 0% / 1) 30%,
     hsl(0 0% 0% / 1) 70%,
     hsl(0 0% 0% / 0)
-  ); /* Adds a gradient mask to fade edges */
+  );
 }
 
 .logo-scroll__wrapper {
@@ -82,8 +82,10 @@ html {
   width: var(--logo-width); /* Sets width of each logo */
   height: var(--logo-height); /* Sets height of each logo */
   /* transition: transform 0.5s; Smooth scaling effect */
-  background-color: blue; /* Background color for logos */
   border-radius: 4px; /* Rounds the logo corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-scroll .logo-item:hover {
