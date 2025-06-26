@@ -116,12 +116,12 @@ export default function Home() {
                 <img
                   src="/nextgen.svg"
                   alt="Nextgen Realty"
-                  className="h-20 w-auto scale-65 inline-block"
+                  className="h-24 w-auto scale-75 inline-block"
                 />
               </div>
             </div>
 
-            { /* Duplicate logo set for seamless looping */}
+            {/* Duplicate logo set for seamless looping */}
             <div className="logo-scroll__wrapper">
               <div className="logo-item">
                 <img
@@ -155,7 +155,7 @@ export default function Home() {
                 <img
                   src="/nextgen.svg"
                   alt="Nextgen Realty"
-                  className="h-20 w-auto scale-65 inline-block"
+                  className="h-20 w-auto inline-block"
                 />
               </div>
             </div>

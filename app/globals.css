@@ -37,7 +37,7 @@ html {
   --gap: calc(
     var(--logo-width) / 14
   ); /* Space between logos, calculated based on logo width */
-  --duration: 15s; /* Duration of the scroll animation */
+  --duration: 20s; /* Duration of the scroll animation */
   --scroll-start: 0; /* Start position of scroll animation */
   --scroll-end: calc(-100% - var(--gap)); /* End position of scroll animation */
 
@@ -71,10 +71,6 @@ html {
   gap: var(--gap); /* Adds spacing between logos */
   min-width: 100%; /* Wrapper width covers full viewport */
   animation: scroll var(--duration) linear infinite; /* Infinite scrolling animation */
-}
-
-.logo-scroll:hover .logo-scroll__wrapper {
-  animation-play-state: paused; /* Pauses animation when wrapper is hovered */
 }
 
 /* Logo styling */
