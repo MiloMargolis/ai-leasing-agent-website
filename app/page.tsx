@@ -78,13 +78,12 @@ export default function Home() {
             <a href="#" className="hover:underline">
               Home
             </a>
-            <a href="#services" className="hover:underline">
-              Services
-            </a>
             <a href="#partners" className="hover:underline">
               Our partners
             </a>
-
+            <a href="#services" className="hover:underline">
+              Services
+            </a>
             <a href="#team" className="hover:underline">
               Our team
             </a>
