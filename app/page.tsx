@@ -9,6 +9,7 @@ export default function Home() {
       school: "Northeastern University",
       major: "Computer Science + AI",
       blurb: "Data Engineering @ Loper, Product @ Cranium AI",
+      linkedin: "https://www.linkedin.com/in/milo-margolis/"
     },
     {
       name: "Rowan Frew",
@@ -17,6 +18,7 @@ export default function Home() {
       school: "Northeastern University",
       major: "Business Administration",
       blurb: "Financial Analyst @ UBS, Piraeus Bank",
+      linkedin: "https://www.linkedin.com/in/rowan-frew-b50806237/"
     },
     {
       name: "David Rooney",
@@ -25,6 +27,7 @@ export default function Home() {
       school: "Northeastern University",
       major: "Industrial Engineering",
       blurb: "R&D @ MATT Energy and Bourdal",
+      linkedin: "https://www.linkedin.com/in/david-rooney-work876/"
     },
 
     {
@@ -34,6 +37,7 @@ export default function Home() {
       school: "Northeastern University",
       major: "Computer Science + AI",
       blurb: "Software engineering @ Harvard and NEXT",
+      linkedin: "https://www.linkedin.com/in/joshua-francis-segal/"
     },
     {
       name: "Lubaina Malvi",
@@ -42,6 +46,7 @@ export default function Home() {
       school: "Northeastern University",
       major: "Business Administration",
       blurb: "Software Engineering @ KKR and Flexcarr",
+      linkedin: "https://www.linkedin.com/in/lubainamalvi/"
     },
     {
       name: "Willem Shak",
@@ -50,6 +55,7 @@ export default function Home() {
       school: "Northeastern University",
       major: "Business Administration",
       blurb: "Software engineering @ Chourus",
+      linkedin: "https://www.linkedin.com/in/willem-shak/"
     },
     {
       name: "Jesse Goldberg",
@@ -58,6 +64,7 @@ export default function Home() {
       school: "Northeastern University",
       major: "Business Administration and Psychology",
       blurb: "Business Operations and Strategy @ EazyDone",
+      linkedin: "https://www.linkedin.com/in/jesse-goldberg-175b76293/"
     },
   ];
 
@@ -117,7 +124,7 @@ export default function Home() {
       {/* Partner Logos Section */}
       <section
         id="partners"
-        className="w-full bg-gradient-to-r from-[#f8f7ff] via-[#f5f4ff] to-[#f2f1ff] py-20 px-6 md:px-12 border-b border-purple-100"
+        className="w-full bg-gradient-to-r from-[#eceff4] via-[#e7ebf0] to-[#f2f4f7] py-20 px-6 md:px-12 border-b border-purple-100"
       >
         <h2 className="text-center text-4xl font-semibold text-gray-800 mb-12">
           Trusted by Boston Leasing Teams
@@ -417,9 +424,21 @@ export default function Home() {
                 {/* Content */}
                 <div className="text-center space-y-3">
                   <div>
-                    <h4 className="text-xl font-extrabold text-gray-900 mb-1">
-                      {person.name}
-                    </h4>
+                    <div className="flex items-center justify-center space-x-2 mb-1">
+                      <h4 className="text-xl font-extrabold text-gray-900">
+                        {person.name}
+                      </h4>
+                      <a
+                        href={person.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-700 transition-colors"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                      </a>
+                    </div>
                     <p className="text-base font-semibold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full inline-block">
                       {person.role}
                     </p>
@@ -435,6 +454,13 @@ export default function Home() {
                     <p className="text-sm text-gray-700 leading-relaxed bg-gray-50 px-3 py-2 rounded-lg font-medium">
                       {person.blurb}
                     </p>
+                    <div className="flex justify-center">
+                      <a
+                        href="#"
+                        className="inline-flex items-center text-sm text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                      >
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
