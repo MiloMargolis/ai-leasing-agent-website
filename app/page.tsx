@@ -124,87 +124,93 @@ export default function Home() {
       {/* Partner Logos Section */}
       <section
         id="partners"
-        className="w-full bg-gradient-to-r from-[#eceff4] via-[#e7ebf0] to-[#f2f4f7] py-20 px-6 md:px-12 border-b border-purple-100"
+        className="w-full bg-gradient-to-b from-gray-50 via-white to-gray-100 py-20 px-6 md:px-12 relative overflow-hidden"
       >
-        <h2 className="text-center text-4xl font-semibold text-gray-800 mb-12">
-          Trusted by Boston Leasing Teams
-        </h2>
-        <div className="logo-container">
-          <div className="logo-scroll">
-            <div className="logo-scroll__wrapper">
-              <div className="logo-item">
-                <img
-                  src="/Cornerstone.svg"
-                  alt="Cornerstone Real Estate"
-                  className="h-20 w-auto inline-block"
-                />
+        {/* Subtle background texture */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-50/30 to-transparent"></div>
+        
+        {/* Content */}
+        <div className="relative z-10">
+          <h2 className="text-center text-4xl font-semibold text-gray-800 mb-12">
+            Trusted by Boston Leasing Teams
+          </h2>
+          <div className="logo-container">
+            <div className="logo-scroll">
+              <div className="logo-scroll__wrapper">
+                <div className="logo-item">
+                  <img
+                    src="/Cornerstone.svg"
+                    alt="Cornerstone Real Estate"
+                    className="h-20 w-auto inline-block"
+                  />
+                </div>
+                <div className="logo-item">
+                  <img
+                    src="/Fisher.svg"
+                    alt="Fisher Realty LLC"
+                    className="h-20 w-auto inline-block"
+                  />
+                </div>
+                <div className="logo-item">
+                  <img
+                    src="/Encore.svg"
+                    alt="Encore Realty"
+                    className="h-20 w-auto scale-65 inline-block"
+                  />
+                </div>
+                <div className="logo-item">
+                  <img
+                    src="/Roos.svg"
+                    alt="Mark Roos Realty"
+                    className="h-20 w-auto inline-block"
+                  />
+                </div>
+                <div className="logo-item">
+                  <img
+                    src="/nextgen.svg"
+                    alt="Nextgen Realty"
+                    className="h-24 w-auto scale-75 inline-block"
+                  />
+                </div>
               </div>
-              <div className="logo-item">
-                <img
-                  src="/Fisher.svg"
-                  alt="Fisher Realty LLC"
-                  className="h-20 w-auto inline-block"
-                />
-              </div>
-              <div className="logo-item">
-                <img
-                  src="/Encore.svg"
-                  alt="Encore Realty"
-                  className="h-20 w-auto scale-65 inline-block"
-                />
-              </div>
-              <div className="logo-item">
-                <img
-                  src="/Roos.svg"
-                  alt="Mark Roos Realty"
-                  className="h-20 w-auto inline-block"
-                />
-              </div>
-              <div className="logo-item">
-                <img
-                  src="/nextgen.svg"
-                  alt="Nextgen Realty"
-                  className="h-24 w-auto scale-75 inline-block"
-                />
-              </div>
-            </div>
 
-            {/* Duplicate logo set for seamless looping */}
-            <div className="logo-scroll__wrapper">
-              <div className="logo-item">
-                <img
-                  src="/Cornerstone.svg"
-                  alt="Cornerstone Real Estate"
-                  className="h-20 w-auto inline-block"
-                />
-              </div>
-              <div className="logo-item">
-                <img
-                  src="/Fisher.svg"
-                  alt="Fisher Realty LLC"
-                  className="h-20 w-auto inline-block"
-                />
-              </div>
-              <div className="logo-item">
-                <img
-                  src="/Encore.svg"
-                  alt="Encore Realty"
-                  className="h-20 w-auto scale-65 inline-block"
-                />
-              </div>
-              <div className="logo-item">
-                <img
-                  src="/Roos.svg"
-                  alt="Mark Roos Realty"
-                  className="h-20 w-auto inline-block"
-                />
-              </div>
-              <div className="logo-item">
-                <img
-                  src="/nextgen.svg"
-                  alt="Nextgen Realty"
-                  className="h-20 w-auto inline-block"
-                />
+              {/* Duplicate logo set for seamless looping */}
+              <div className="logo-scroll__wrapper">
+                <div className="logo-item">
+                  <img
+                    src="/Cornerstone.svg"
+                    alt="Cornerstone Real Estate"
+                    className="h-20 w-auto inline-block"
+                  />
+                </div>
+                <div className="logo-item">
+                  <img
+                    src="/Fisher.svg"
+                    alt="Fisher Realty LLC"
+                    className="h-20 w-auto inline-block"
+                  />
+                </div>
+                <div className="logo-item">
+                  <img
+                    src="/Encore.svg"
+                    alt="Encore Realty"
+                    className="h-20 w-auto scale-65 inline-block"
+                  />
+                </div>
+                <div className="logo-item">
+                  <img
+                    src="/Roos.svg"
+                    alt="Mark Roos Realty"
+                    className="h-20 w-auto inline-block"
+                  />
+                </div>
+                <div className="logo-item">
+                  <img
+                    src="/nextgen.svg"
+                    alt="Nextgen Realty"
+                    className="h-20 w-auto inline-block"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -215,11 +221,11 @@ export default function Home() {
 
       <section id="services" className="bg-gradient-to-br from-gray-50 via-white to-[#faf9ff] py-24 px-6 md:px-16 border-b border-purple-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
+          <div className="text-left mb-20">
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
               Convert more with less
             </h2>
-            <p className="text-xl text-gray-600 max-w-5xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-xl">
               AI-powered tools that handle the heavy lifting, so your team can focus on what matters most.
             </p>
           </div>
