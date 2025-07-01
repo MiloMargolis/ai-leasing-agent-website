@@ -446,16 +446,16 @@ export default function Home() {
 
       <section
         id="contact"
-        className="bg-[#f9fafb] py-20 px-6 md:px-12 border-t border-gray-200"
+        className="bg-[#f9fafb] py-12 px-6 md:px-12 border-t border-gray-200"
       >
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
           Contact Us
         </h2>
-        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-8 text-lg">
+        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-6 text-base">
           Reach out anytime. We're happy to chat.
         </p>
 
-        <div className="text-center text-gray-700 mb-8 space-y-2">
+        <div className="text-center text-gray-700 mb-6 space-y-1">
           <p>
             Email:{" "}
             <a
@@ -482,7 +482,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="px-10 py-3 rounded-full bg-[#6C63FF] text-white text-lg font-semibold hover:bg-indigo-600 shadow-md">
+            <button className="px-8 py-2.5 rounded-full bg-[#6C63FF] text-white text-base font-semibold hover:bg-indigo-600 shadow-md">
               Book a Demo
             </button>
           </a>
