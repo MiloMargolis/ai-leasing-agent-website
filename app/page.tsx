@@ -44,7 +44,7 @@ export default function Home() {
       role: "Engineering",
       image: "/person5.jpg",
       school: "Northeastern University",
-      major: "Business Administration",
+      major: "Computer Science + AI",
       blurb: "Software Engineering @ KKR and Flexcarr",
       linkedin: "https://www.linkedin.com/in/lubainamalvi/"
     },
@@ -53,7 +53,7 @@ export default function Home() {
       role: "Engineering",
       image: "/person6.jpg",
       school: "Northeastern University",
-      major: "Business Administration",
+      major: "Computer Science + AI",
       blurb: "Software engineering @ Chourus",
       linkedin: "https://www.linkedin.com/in/willem-shak/"
     },
@@ -457,9 +457,9 @@ export default function Home() {
                     <p className="text-sm text-gray-600 font-semibold mb-3">
                       {person.major}
                     </p>
-                    <p className="text-sm text-gray-700 leading-relaxed bg-gray-50 px-3 py-2 rounded-lg font-medium">
+                    {/* <p className="text-sm text-gray-700 leading-relaxed bg-gray-50 px-3 py-2 rounded-lg font-medium">
                       {person.blurb}
-                    </p>
+                    </p> */}
                     <div className="flex justify-center">
                       <a
                         href="#"
