@@ -207,91 +207,173 @@ export default function Home() {
 
       {/* Services Section */}
 
-      <section id="services" className="bg-[#f3f4f6] py-24 px-6 md:px-16">
-        {/* <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
-          Book more with less
-        </h2> */}
-        <h2 className="text-4xl font-bold text-left text-gray-800 mb-16 pl-7">
-          Convert more with less
-        </h2>
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
-              24/7 Response
-            </h3>
-            <p className="text-xl font-semibold text-gray-800">
-              AI handles leads instantly
-            </p>
-            <p className="text-sm text-gray-600 mt-3">
-              Auto-replies and tour booking with no lag, no missed messages.
+      <section id="services" className="bg-gradient-to-br from-[#f6f3ff] via-white to-[#ede9fe] py-24 px-6 md:px-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <h2 className="text-5xl font-bold text-gray-900 mb-6">
+              Convert more with less
+            </h2>
+            <p className="text-xl text-gray-600 max-w-5xl mx-auto">
+              AI-powered tools that handle the heavy lifting, so your team can focus on what matters most.
             </p>
           </div>
 
-          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
-              Follow-up Automation
-            </h3>
-            <p className="text-xl font-semibold text-gray-800">
-              Never lose a warm lead
-            </p>
-            <p className="text-sm text-gray-600 mt-3">
-              We track, remind, and re-engage across SMS + email.
-            </p>
-          </div>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {/* 24/7 Response */}
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-t-2xl"></div>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900">24/7 Response</h3>
+              </div>
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">
+                AI handles leads instantly
+              </h4>
+              <p className="text-gray-600 leading-relaxed">
+                Auto-replies and tour booking with no lag, no missed messages. Never lose a lead again.
+              </p>
+              <div className="mt-6 flex items-center text-purple-600 font-semibold">
+                <span>Always available</span>
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
 
-          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
-              Human Escalation
-            </h3>
-            <p className="text-xl font-semibold text-gray-800">
-              Loop in your team when needed
-            </p>
-            <p className="text-sm text-gray-600 mt-3">
-              Only real agents step in when the AI needs a hand.
-            </p>
-          </div>
+            {/* Follow-up Automation */}
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-indigo-400 rounded-t-2xl"></div>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-indigo-400 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900">Follow-up Automation</h3>
+              </div>
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">
+                Never lose a warm lead
+              </h4>
+              <p className="text-gray-600 leading-relaxed">
+                We track, remind, and re-engage across SMS + email with intelligent timing.
+              </p>
+              <div className="mt-6 flex items-center text-purple-500 font-semibold">
+                <span>Smart nurturing</span>
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
 
-          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
-              Calendar Integration
-            </h3>
-            <p className="text-xl font-semibold text-gray-800">
-              Book right into your system
-            </p>
-            <p className="text-sm text-gray-600 mt-3">
-              We connect to your team’s calendar or showings tool.
-            </p>
-          </div>
+            {/* Human Escalation */}
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-purple-300 rounded-t-2xl"></div>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-purple-300 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900">Human Escalation</h3>
+              </div>
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">
+                Loop in your team when needed
+              </h4>
+              <p className="text-gray-600 leading-relaxed">
+                Only real agents step in when the AI needs a hand. Seamless handoffs.
+              </p>
+              <div className="mt-6 flex items-center text-purple-400 font-semibold">
+                <span>Smart handoffs</span>
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
 
-          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
-              Data Sync
-            </h3>
-            <p className="text-xl font-semibold text-gray-800">
-              Push to your CRM
-            </p>
-            <p className="text-sm text-gray-600 mt-3">
-              Every lead gets logged and enriched with insights.
-            </p>
-          </div>
+            {/* Calendar Integration */}
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-400 rounded-t-2xl"></div>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-400 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900">Calendar Integration</h3>
+              </div>
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">
+                Book right into your system
+              </h4>
+              <p className="text-gray-600 leading-relaxed">
+                We connect to your team's calendar or showings tool automatically.
+              </p>
+              <div className="mt-6 flex items-center text-purple-500 font-semibold">
+                <span>Seamless sync</span>
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
 
-          <div className="bg-white rounded-xl p-6 shadow-md border border-gray-200">
-            <h3 className="text-sm text-indigo-500 font-semibold mb-2">
-              Performance Tracking
-            </h3>
-            <p className="text-xl font-semibold text-gray-800">
-              See what’s working
-            </p>
-            <p className="text-sm text-gray-600 mt-3">
-              Track booked tours, lead response time, and conversion lift.
-            </p>
+            {/* Data Sync */}
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-300 to-purple-400 rounded-t-2xl"></div>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-indigo-300 to-purple-400 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900">Data Sync</h3>
+              </div>
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">
+                Push to your CRM
+              </h4>
+              <p className="text-gray-600 leading-relaxed">
+                Every lead gets logged and enriched with insights automatically.
+              </p>
+              <div className="mt-6 flex items-center text-purple-400 font-semibold">
+                <span>Auto-enrichment</span>
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+
+            {/* Performance Tracking */}
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-300 to-indigo-400 rounded-t-2xl"></div>
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-300 to-indigo-400 rounded-xl flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900">Performance Tracking</h3>
+              </div>
+              <h4 className="text-2xl font-bold text-gray-800 mb-4">
+                See what's working
+              </h4>
+              <p className="text-gray-600 leading-relaxed">
+                Track booked tours, lead response time, and conversion lift with detailed analytics.
+              </p>
+              <div className="mt-6 flex items-center text-purple-300 font-semibold">
+                <span>Real-time insights</span>
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Team Section */}
-      <section id="team" className="bg-white py-24 px-6 md:px-12">
+      <section id="team" className="bg-white pt-10 pb-24 px-6 md:px-12">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
           Meet the Team
         </h2>
@@ -370,7 +452,7 @@ export default function Home() {
           Contact Us
         </h2>
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-8 text-lg">
-          Reach out anytime. We’re happy to chat.
+          Reach out anytime. We're happy to chat.
         </p>
 
         <div className="text-center text-gray-700 mb-8 space-y-2">
