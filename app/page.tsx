@@ -207,7 +207,7 @@ export default function Home() {
 
       {/* Services Section */}
 
-      <section id="services" className="bg-gradient-to-br from-[#f6f3ff] via-white to-[#ede9fe] py-24 px-6 md:px-16">
+      <section id="services" className="bg-gradient-to-br from-gray-50 via-white to-gray-50 py-24 px-6 md:px-16">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
@@ -220,10 +220,10 @@ export default function Home() {
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* 24/7 Response */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-t-2xl"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-blue-500 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-500 rounded-xl flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -245,10 +245,10 @@ export default function Home() {
             </div>
 
             {/* Follow-up Automation */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-indigo-400 rounded-t-2xl"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-purple-400 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-indigo-400 rounded-xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-400 rounded-xl flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                   </svg>
@@ -261,19 +261,19 @@ export default function Home() {
               <p className="text-gray-600 leading-relaxed">
                 We track, remind, and re-engage across SMS + email with intelligent timing.
               </p>
-              <div className="mt-6 flex items-center text-purple-500 font-semibold">
+              <div className="mt-6 flex items-center text-indigo-500 font-semibold">
                 <span>Smart nurturing</span>
-                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
             </div>
 
             {/* Human Escalation */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-purple-300 rounded-t-2xl"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-indigo-400 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-purple-300 rounded-xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-400 rounded-xl flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
@@ -286,19 +286,19 @@ export default function Home() {
               <p className="text-gray-600 leading-relaxed">
                 Only real agents step in when the AI needs a hand. Seamless handoffs.
               </p>
-              <div className="mt-6 flex items-center text-purple-400 font-semibold">
+              <div className="mt-6 flex items-center text-blue-600 font-semibold">
                 <span>Smart handoffs</span>
-                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
             </div>
 
             {/* Calendar Integration */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-400 rounded-t-2xl"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-400 rounded-xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
@@ -320,10 +320,10 @@ export default function Home() {
             </div>
 
             {/* Data Sync */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-300 to-purple-400 rounded-t-2xl"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-indigo-300 to-purple-400 rounded-xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-xl flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                   </svg>
@@ -336,19 +336,19 @@ export default function Home() {
               <p className="text-gray-600 leading-relaxed">
                 Every lead gets logged and enriched with insights automatically.
               </p>
-              <div className="mt-6 flex items-center text-purple-400 font-semibold">
+              <div className="mt-6 flex items-center text-indigo-400 font-semibold">
                 <span>Auto-enrichment</span>
-                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-indigo-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
             </div>
 
             {/* Performance Tracking */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-[#ede9fe] transition-all duration-300 hover:-translate-y-2">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-300 to-indigo-400 rounded-t-2xl"></div>
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-blue-400 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-300 to-indigo-400 rounded-xl flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-400 rounded-xl flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
@@ -361,7 +361,7 @@ export default function Home() {
               <p className="text-gray-600 leading-relaxed">
                 Track booked tours, lead response time, and conversion lift with detailed analytics.
               </p>
-              <div className="mt-6 flex items-center text-purple-300 font-semibold">
+              <div className="mt-6 flex items-center text-purple-400 font-semibold">
                 <span>Real-time insights</span>
                 <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-purple-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
