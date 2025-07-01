@@ -126,10 +126,8 @@ export default function Home() {
         id="partners"
         className="w-full bg-gradient-to-b from-gray-50 via-white to-gray-100 py-20 px-6 md:px-12 relative overflow-hidden"
       >
-        {/* Subtle background texture */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-50/30 to-transparent"></div>
-        
-        {/* Content */}
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-100 to-transparent"></div>
         <div className="relative z-10">
           <h2 className="text-center text-4xl font-semibold text-gray-800 mb-12">
             Trusted by Boston Leasing Teams
@@ -218,9 +216,10 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-
-      <section id="services" className="bg-gradient-to-br from-gray-50 via-white to-[#faf9ff] py-24 px-6 md:px-16 border-b border-purple-50">
-        <div className="max-w-7xl mx-auto">
+      <section id="services" className="bg-gradient-to-br from-gray-50 via-white to-gray-100 py-24 px-6 md:px-16 relative">
+        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-gray-100 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-100 to-transparent"></div>
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-left mb-20">
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
               Convert more with less
@@ -229,10 +228,9 @@ export default function Home() {
               AI-powered tools that handle the heavy lifting, so your team can focus on what matters most.
             </p>
           </div>
-
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* 24/7 Response */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-200">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-blue-500 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-500 rounded-xl flex items-center justify-center mr-4">
@@ -257,7 +255,7 @@ export default function Home() {
             </div>
 
             {/* Follow-up Automation */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-200">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-purple-400 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-400 rounded-xl flex items-center justify-center mr-4">
@@ -282,7 +280,7 @@ export default function Home() {
             </div>
 
             {/* Human Escalation */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-200">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-indigo-400 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-400 rounded-xl flex items-center justify-center mr-4">
@@ -307,7 +305,7 @@ export default function Home() {
             </div>
 
             {/* Calendar Integration */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-200">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center mr-4">
@@ -332,7 +330,7 @@ export default function Home() {
             </div>
 
             {/* Data Sync */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-200">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-xl flex items-center justify-center mr-4">
@@ -357,7 +355,7 @@ export default function Home() {
             </div>
 
             {/* Performance Tracking */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-200">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-blue-400 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-400 rounded-xl flex items-center justify-center mr-4">
@@ -385,7 +383,8 @@ export default function Home() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="bg-white pt-10 pb-24 px-6 md:px-12 border-b border-purple-50">
+      <section id="team" className="bg-white pt-10 pb-24 px-6 md:px-12 relative">
+        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-gray-100 to-transparent"></div>
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
           Meet the Team
         </h2>
@@ -440,17 +439,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Contact Section */}
       <section
         id="contact"
-        className="bg-gradient-to-br from-[#f9fafb] via-white to-[#f8f7ff] py-12 px-6 md:px-12 border-t border-purple-100"
+        className="bg-gradient-to-br from-gray-50 via-white to-gray-100 py-12 px-6 md:px-12 relative"
       >
+        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-white to-transparent"></div>
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
           Contact Us
         </h2>
         <p className="text-center text-gray-600 max-w-2xl mx-auto mb-6 text-base">
           Reach out anytime. We're happy to chat.
         </p>
-
         <div className="text-center text-gray-700 mb-6 space-y-1">
           <p>
             Email:{" "}
@@ -471,7 +471,6 @@ export default function Home() {
             </a>
           </p>
         </div>
-
         <div className="text-center">
           <a
             href="https://calendly.com/milomargolis4/30min?month=2025-06"
@@ -484,6 +483,20 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-100 text-gray-500 text-sm py-8 px-6 md:px-12 mt-0 text-center">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <div>&copy; {new Date().getFullYear()} HouseFly. All rights reserved.</div>
+          <div className="flex gap-4 justify-center md:justify-end">
+            <a href="#" className="hover:text-indigo-600 transition-colors">Home</a>
+            <a href="#partners" className="hover:text-indigo-600 transition-colors">Partners</a>
+            <a href="#services" className="hover:text-indigo-600 transition-colors">Services</a>
+            <a href="#team" className="hover:text-indigo-600 transition-colors">Team</a>
+            <a href="#contact" className="hover:text-indigo-600 transition-colors">Contact</a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
