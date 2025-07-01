@@ -75,19 +75,19 @@ export default function Home() {
             <span className="text-xl font-bold">HouseFly</span>
           </div>
           <div className="space-x-8 hidden text-lg md:flex">
-            <a href="#" className="hover:underline">
+            <a href="#" className="hover:text-purple-600 hover:underline transition-colors">
               Home
             </a>
-            <a href="#partners" className="hover:underline">
+            <a href="#partners" className="hover:text-purple-600 hover:underline transition-colors">
               Our partners
             </a>
-            <a href="#services" className="hover:underline">
+            <a href="#services" className="hover:text-purple-600 hover:underline transition-colors">
               Services
             </a>
-            <a href="#team" className="hover:underline">
+            <a href="#team" className="hover:text-purple-600 hover:underline transition-colors">
               Our team
             </a>
-            <a href="#contact" className="hover:underline">
+            <a href="#contact" className="hover:text-purple-600 hover:underline transition-colors">
               Contact
             </a>
           </div>
@@ -117,7 +117,7 @@ export default function Home() {
       {/* Partner Logos Section */}
       <section
         id="partners"
-        className="w-full bg-gradient-to-r from-[#eceff4] via-[#e7ebf0] to-[#f2f4f7] py-20 px-6 md:px-12"
+        className="w-full bg-gradient-to-r from-[#f8f7ff] via-[#f5f4ff] to-[#f2f1ff] py-20 px-6 md:px-12 border-b border-purple-100"
       >
         <h2 className="text-center text-4xl font-semibold text-gray-800 mb-12">
           Trusted by Boston Leasing Teams
@@ -206,7 +206,7 @@ export default function Home() {
 
       {/* Services Section */}
 
-      <section id="services" className="bg-gradient-to-br from-gray-50 via-white to-gray-50 py-24 px-6 md:px-16">
+      <section id="services" className="bg-gradient-to-br from-gray-50 via-white to-[#faf9ff] py-24 px-6 md:px-16 border-b border-purple-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
@@ -219,7 +219,7 @@ export default function Home() {
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* 24/7 Response */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-600 to-blue-500 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-blue-500 rounded-xl flex items-center justify-center mr-4">
@@ -244,7 +244,7 @@ export default function Home() {
             </div>
 
             {/* Follow-up Automation */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-500 to-purple-400 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-400 rounded-xl flex items-center justify-center mr-4">
@@ -269,7 +269,7 @@ export default function Home() {
             </div>
 
             {/* Human Escalation */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-600 to-indigo-400 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-400 rounded-xl flex items-center justify-center mr-4">
@@ -294,7 +294,7 @@ export default function Home() {
             </div>
 
             {/* Calendar Integration */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-xl flex items-center justify-center mr-4">
@@ -319,7 +319,7 @@ export default function Home() {
             </div>
 
             {/* Data Sync */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-xl flex items-center justify-center mr-4">
@@ -344,7 +344,7 @@ export default function Home() {
             </div>
 
             {/* Performance Tracking */}
-            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2">
+            <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-purple-100">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-400 to-blue-400 rounded-t-2xl"></div>
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-blue-400 rounded-xl flex items-center justify-center mr-4">
@@ -372,7 +372,7 @@ export default function Home() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="bg-white pt-10 pb-24 px-6 md:px-12">
+      <section id="team" className="bg-white pt-10 pb-24 px-6 md:px-12 border-b border-purple-50">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-6">
           Meet the Team
         </h2>
@@ -445,7 +445,7 @@ export default function Home() {
 
       <section
         id="contact"
-        className="bg-[#f9fafb] py-12 px-6 md:px-12 border-t border-gray-200"
+        className="bg-gradient-to-br from-[#f9fafb] via-white to-[#f8f7ff] py-12 px-6 md:px-12 border-t border-purple-100"
       >
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
           Contact Us
@@ -459,7 +459,7 @@ export default function Home() {
             Email:{" "}
             <a
               href="houseflyoutreach@gmail.com"
-              className="text-indigo-600 hover:underline"
+              className="text-indigo-600 hover:text-purple-600 hover:underline transition-colors"
             >
               houseflyoutreach@gmail.com
             </a>
@@ -468,7 +468,7 @@ export default function Home() {
             Phone:{" "}
             <a
               href="tel:+1 (617)-752-2174"
-              className="text-indigo-600 hover:underline"
+              className="text-indigo-600 hover:text-purple-600 hover:underline transition-colors"
             >
               (617) 752 2174
             </a>
@@ -481,7 +481,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="px-8 py-2.5 rounded-full bg-[#6C63FF] text-white text-base font-semibold hover:bg-indigo-600 shadow-md">
+            <button className="px-8 py-2.5 rounded-full bg-[#6C63FF] text-white text-base font-semibold hover:bg-indigo-600 shadow-md transition-all duration-200 hover:shadow-lg">
               Book a Demo
             </button>
           </a>
