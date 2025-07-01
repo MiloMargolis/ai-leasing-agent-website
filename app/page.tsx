@@ -2,20 +2,62 @@ import React from "react";
 
 export default function Home() {
   const team = [
-    { name: "Milo Margolis", role: "Founder", image: "/person1.jpg" },
-    { name: "Rowan Frew", role: "Business Development", image: "/person2.jpg" },
+    {
+      name: "Milo Margolis",
+      role: "Founder",
+      image: "/person1.jpg",
+      school: "Northeastern University",
+      major: "Computer Science + AI",
+      blurb: "Data Engineering @ Loper, Product @ Cranium AI",
+    },
+    {
+      name: "Rowan Frew",
+      role: "Business Development",
+      image: "/person2.jpg",
+      school: "Northeastern University",
+      major: "Business Administration",
+      blurb: "Financial Analyst @ UBS, Piraeus Bank",
+    },
     {
       name: "David Rooney",
       role: "Business Development",
       image: "/person3.jpg",
+      school: "Northeastern University",
+      major: "Industrial Engineering",
+      blurb: "R&D @ MATT Energy and Bourdal",
     },
-    { name: "Josh Segal", role: "Engineering", image: "/person4.jpg" },
-    { name: "Lubaina Malvi", role: "Engineering", image: "/person5.jpg" },
-    { name: "Willem Shak", role: "Engineering", image: "/person6.jpg" },
+
+    {
+      name: "Josh Segal",
+      role: "Engineering",
+      image: "/person4.jpg",
+      school: "Northeastern University",
+      major: "Computer Science + AI",
+      blurb: "Software engineering @ Harvard and NEXT",
+    },
+    {
+      name: "Lubaina Malvi",
+      role: "Engineering",
+      image: "/person5.jpg",
+      school: "Northeastern University",
+      major: "Business Administration",
+      blurb: "Software Engineering @ KKR and Flexcarr",
+    },
+    {
+      name: "Willem Shak",
+      role: "Engineering",
+      image: "/person6.jpg",
+      school: "Northeastern University",
+      major: "Business Administration",
+      blurb: "Software engineering @ Chourus",
+    },
     {
       name: "Jesse Goldberg",
       role: "Business Development",
       image: "/person7.jpg",
+      school: "Northeastern University",
+      major: "Business Administration and Psychology",
+      blurb: "Business Operations and Strategy @ EazyDone",
     },
   ];
 
@@ -261,7 +303,7 @@ export default function Home() {
           communication, qualifies leads, and optimizes listings, so the human
           agents can focus on closing deals, not managing inboxes.
         </p>
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
+        {/* <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
           {team.map((person, i) => (
             <div key={i} className="flex flex-col items-center text-center">
               <img
@@ -273,6 +315,40 @@ export default function Home() {
                 {person.name}
               </h3>
               <p className="text-gray-500">{person.role}</p>
+            </div>
+          ))}
+        </div> */}
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
+          {team.map((person, i) => (
+            <div
+              key={i}
+              className="relative group flex flex-col items-center text-center"
+            >
+              <img
+                src={person.image}
+                alt={person.name}
+                className="w-32 h-32 rounded-full object-cover shadow-md mb-4"
+              />
+              <h3 className="text-xl font-semibold text-gray-800">
+                {person.name}
+              </h3>
+              <p className="text-gray-500">{person.role}</p>
+
+              {/* Hover Popup */}
+              <div className="absolute z-20 top-0 left-1/2 -translate-x-1/2 bg-white shadow-xl border rounded-xl p-4 w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none group-hover:pointer-events-auto">
+                <img
+                  src={person.image}
+                  alt={person.name}
+                  className="w-34 h-34 rounded-full object-cover mx-auto mb-2"
+                />
+                <p className="text-sm text-gray-700 font-semibold">
+                  {person.school}
+                </p>
+                <p className="text-sm text-gray-600 italic mb-2">
+                  {person.major}
+                </p>
+                <p className="text-sm text-gray-700">{person.blurb}</p>
+              </div>
             </div>
           ))}
         </div>
