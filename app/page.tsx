@@ -101,7 +101,7 @@ export default function Home() {
         </div>
 
         {/* Centered Content */}
-        <div className="relative z-0 h-full flex flex-col items-center justify-center text-center px-4 pointer-events-none">
+        <div className="relative z-0 h-full flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-white text-5xl sm:text-6xl md:text-7xl font-bold max-w-5xl leading-tight">
             AI Powered Leasing Agent
           </h1>
@@ -114,8 +114,29 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="mt-12 px-12 py-4 rounded-full bg-[#6C63FF] text-white text-2xl font-semibold hover:bg-indigo-600 shadow-lg pointer-events-auto">
-              Book a Demo
+            <button
+              className="
+                mt-10 px-8 py-3 rounded-full
+                bg-gradient-to-r from-[#6C63FF] via-indigo-500 to-blue-500 animate-gradient-x
+                text-white text-xl font-bold tracking-tight
+                shadow-xl shadow-indigo-300/40
+                flex items-center gap-3
+                border-2 border-white/30 backdrop-blur-md bg-opacity-80
+                ring-2 ring-blue-300/30
+                transition-all duration-200
+                hover:scale-105 hover:shadow-[0_8px_32px_0_rgba(76,110,245,0.25)] hover:ring-4 hover:ring-blue-400/40
+                active:scale-97
+                focus:outline-none focus:ring-4 focus:ring-indigo-300
+                relative overflow-hidden
+                before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-400/30 before:via-purple-400/20 before:to-indigo-400/30 before:blur-lg before:opacity-60 before:transition-opacity before:duration-300 before:pointer-events-none
+                group
+              "
+              aria-label="Book a Demo"
+            >
+              <span className="z-10">Book a Demo</span>
+              <svg className="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1 group-hover:scale-110 group-active:scale-95" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </button>
           </a>
         </div>
@@ -477,8 +498,11 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="px-8 py-2.5 rounded-full bg-[#6C63FF] text-white text-base font-semibold hover:bg-indigo-600 shadow-md transition-all duration-200 hover:shadow-lg">
-              Book a Demo
+            <button className="px-12 py-3 rounded-full bg-gradient-to-r from-[#6C63FF] via-indigo-500 to-blue-500 animate-gradient-x text-white text-lg font-bold shadow-xl border-2 border-white/30 backdrop-blur-md bg-opacity-80 ring-2 ring-blue-300/30 transition-all duration-200 hover:scale-105 hover:shadow-2xl hover:ring-4 hover:ring-blue-400/40 active:scale-97 focus:outline-none focus:ring-4 focus:ring-indigo-300 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-400/30 before:via-purple-400/20 before:to-indigo-400/30 before:blur-lg before:opacity-60 before:transition-opacity before:duration-300 before:pointer-events-none group flex items-center gap-2">
+              <span className="z-10">Book a Demo</span>
+              <svg className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1 group-hover:scale-110 group-active:scale-95" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </button>
           </a>
         </div>
