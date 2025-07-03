@@ -1,4 +1,20 @@
-import React from "react";
+"use client";
+import React, { useRef, useEffect, useState } from "react";
+
+// Simple in-view hook for fade/slide-in
+function useInView<T extends HTMLElement = HTMLElement>(threshold = 0.15): [React.RefObject<T | null>, boolean] {
+  const ref = useRef<T | null>(null);
+  const [inView, setInView] = useState(false);
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      ([entry]) => setInView(entry.isIntersecting),
+      { threshold }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, [threshold]);
+  return [ref, inView];
+}
 
 export default function Home() {
   const team = [
@@ -68,11 +84,18 @@ export default function Home() {
     },
   ];
 
+  const [heroRef, heroInView] = useInView<HTMLDivElement>();
+  const [partnersRef, partnersInView] = useInView<HTMLElement>();
+  const [servicesRef, servicesInView] = useInView<HTMLElement>();
+  const [teamRef, teamInView] = useInView<HTMLElement>();
+  const [contactRef, contactInView] = useInView<HTMLElement>();
+
   return (
     <div className="w-full">
       {/* Hero Section */}
       <div
-        className="h-screen w-full bg-cover bg-center relative pb-0"
+        ref={heroRef}
+        className={`h-screen w-full bg-cover bg-center relative pb-0 transition-all duration-700 ease-out ${heroInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
         style={{ backgroundImage: "url('/hero.jpg')" }}
       >
         {/* Top Nav */}
@@ -144,8 +167,9 @@ export default function Home() {
 
       {/* Partner Logos Section */}
       <section
+        ref={partnersRef}
         id="partners"
-        className="w-full bg-gradient-to-b from-gray-50 via-white to-gray-100 py-20 px-6 md:px-12 relative overflow-hidden"
+        className={`w-full bg-gradient-to-b from-gray-50 via-white to-gray-100 py-20 px-6 md:px-12 relative overflow-hidden transition-all duration-700 ease-out ${partnersInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-50/30 to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-100 to-transparent"></div>
@@ -237,7 +261,11 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="bg-gradient-to-br from-gray-50 via-white to-gray-100 py-24 px-6 md:px-16 relative">
+      <section
+        ref={servicesRef}
+        id="services"
+        className={`bg-gradient-to-br from-gray-50 via-white to-gray-100 py-24 px-6 md:px-16 relative transition-all duration-700 ease-out ${servicesInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+      >
         <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-gray-100 to-transparent"></div>
         <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-100 to-transparent"></div>
         <div className="max-w-7xl mx-auto relative z-10">
@@ -404,7 +432,11 @@ export default function Home() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="bg-white pt-10 pb-24 px-6 md:px-12 relative">
+      <section
+        ref={teamRef}
+        id="team"
+        className={`bg-white pt-10 pb-24 px-6 md:px-12 relative transition-all duration-700 ease-out ${teamInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+      >
         <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-gray-100 to-transparent"></div>
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-6 font-heading">
           Meet the Team
@@ -434,7 +466,7 @@ export default function Home() {
               <p className="text-gray-500">{person.role}</p>
 
               {/* Hover Popup */}
-              <div className="absolute z-30 -top-8 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-xl border border-white/30 shadow-2xl rounded-3xl p-7 w-80 opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-105 transition-all duration-300 ease-out pointer-events-none group-hover:pointer-events-auto">
+              <div className="absolute z-[999] -top-8 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-xl border border-white/30 shadow-2xl rounded-3xl p-7 w-80 opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-105 transition-all duration-300 ease-out pointer-events-none group-hover:pointer-events-auto">
                 <div className="flex flex-col items-center">
                   <img
                     src={person.image}
@@ -471,8 +503,9 @@ export default function Home() {
 
       {/* Contact Section */}
       <section
+        ref={contactRef}
         id="contact"
-        className="bg-gradient-to-br from-gray-50 via-white to-gray-100 py-12 px-6 md:px-12 relative"
+        className={`bg-gradient-to-br from-gray-50 via-white to-gray-100 py-12 px-6 md:px-12 relative transition-all duration-700 ease-out ${contactInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
       >
         <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-white to-transparent"></div>
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-4 font-heading">
