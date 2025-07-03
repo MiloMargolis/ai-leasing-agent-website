@@ -1,5 +1,10 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
+import HeroSection from "../components/HeroSection";
+import PartnersSection from "../components/PartnersSection";
+import ServicesSection from "../components/ServicesSection";
+import TeamSection from "../components/TeamSection";
+import ContactSection from "../components/ContactSection";
 
 // Simple in-view hook for fade/slide-in
 function useInView<T extends HTMLElement = HTMLElement>(threshold = 0.15): [React.RefObject<T | null>, boolean] {
@@ -211,220 +216,11 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <div
-        ref={heroRef}
-        className={`h-screen w-full bg-cover bg-center relative pb-0 transition-all duration-700 ease-out ${heroInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-        style={{ backgroundImage: "url('/hero.jpg')" }}
-      >
-        {/* Top Nav */}
-        <div className="absolute top-0 left-0 right-0 flex justify-between items-center px-8 py-6 z-50 text-white pointer-events-auto">
-          <div className="flex items-center space-x-3">
-            <img src="/Logo.svg" alt="HouseFly logo" className="h-8" />
-            <span className="text-xl font-bold">HouseFly</span>
-          </div>
-          <div className="space-x-8 hidden text-lg md:flex">
-            <a href="#" className="hover:text-purple-600 hover:underline transition-colors">
-              Home
-            </a>
-            <a href="#partners" className="hover:text-purple-600 hover:underline transition-colors">
-              Our partners
-            </a>
-            <a href="#services" className="hover:text-purple-600 hover:underline transition-colors">
-              Services
-            </a>
-            <a href="#team" className="hover:text-purple-600 hover:underline transition-colors">
-              Our team
-            </a>
-            <a href="#contact" className="hover:text-purple-600 hover:underline transition-colors">
-              Contact
-            </a>
-          </div>
-        </div>
-
-        {/* Centered Content */}
-        <div className="relative z-0 h-full flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-white text-5xl sm:text-6xl md:text-7xl font-bold max-w-5xl leading-tight font-heading">
-            AI Powered Leasing Agent
-          </h1>
-          <p className="text-white text-3xl md:text-3xl font-large font-bold mt-6 max-w-4xl drop-shadow-2xl">
-            Qualify leads, automate conversations, and handle follow-ups, so
-            human agents can focus on closing.
-          </p>
-          <a
-            href="https://calendly.com/milomargolis4/30min?month=2025-06"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button
-              className="
-                mt-10 px-8 py-3 rounded-full
-                bg-gradient-to-r from-[#6C63FF] via-indigo-500 to-blue-500 animate-gradient-x
-                text-white text-xl font-bold tracking-tight
-                shadow-xl shadow-indigo-300/40
-                flex items-center gap-3
-                border-2 border-white/30 backdrop-blur-md bg-opacity-80
-                ring-2 ring-blue-300/30
-                transition-all duration-200
-                hover:scale-105 hover:shadow-[0_8px_32px_0_rgba(76,110,245,0.25)] hover:ring-4 hover:ring-blue-400/40
-                active:scale-97
-                focus:outline-none focus:ring-4 focus:ring-indigo-300
-                relative overflow-hidden
-                before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-400/30 before:via-purple-400/20 before:to-indigo-400/30 before:blur-lg before:opacity-60 before:transition-opacity before:duration-300 before:pointer-events-none
-                group
-              "
-              aria-label="Book a Demo"
-            >
-              <span className="z-10">Book a Demo</span>
-              <svg className="w-5 h-5 ml-2 transition-transform duration-200 group-hover:translate-x-1 group-hover:scale-110 group-active:scale-95" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
-          </a>
-        </div>
-      </div>
-
+      <HeroSection heroRef={heroRef} heroInView={heroInView} />
       {/* Partner Logos Section */}
-      <section
-        ref={partnersRef}
-        id="partners"
-        className={`w-full bg-gradient-to-b from-gray-50 via-white to-gray-100 py-20 px-6 md:px-12 relative overflow-hidden transition-all duration-700 ease-out ${partnersInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gray-50/30 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-100 to-transparent"></div>
-        <div className="relative z-10">
-          <h2 className="text-center text-4xl font-semibold text-gray-800 mb-12 font-heading">
-            Trusted by Boston Leasing Teams
-          </h2>
-          <div className="logo-container">
-            <div className="logo-scroll">
-              <div className="logo-scroll__wrapper">
-                <div className="logo-item">
-                  <img
-                    src="/Cornerstone.svg"
-                    alt="Cornerstone Real Estate"
-                    className="h-20 w-auto inline-block"
-                  />
-                </div>
-                <div className="logo-item">
-                  <img
-                    src="/Fisher.svg"
-                    alt="Fisher Realty LLC"
-                    className="h-20 w-auto inline-block"
-                  />
-                </div>
-                <div className="logo-item">
-                  <img
-                    src="/Encore.svg"
-                    alt="Encore Realty"
-                    className="h-20 w-auto scale-65 inline-block"
-                  />
-                </div>
-                <div className="logo-item">
-                  <img
-                    src="/Roos.svg"
-                    alt="Mark Roos Realty"
-                    className="h-20 w-auto inline-block"
-                  />
-                </div>
-                <div className="logo-item">
-                  <img
-                    src="/nextgen.svg"
-                    alt="Nextgen Realty"
-                    className="h-24 w-auto scale-75 inline-block"
-                  />
-                </div>
-              </div>
-
-              {/* Duplicate logo set for seamless looping */}
-              <div className="logo-scroll__wrapper">
-                <div className="logo-item">
-                  <img
-                    src="/Cornerstone.svg"
-                    alt="Cornerstone Real Estate"
-                    className="h-20 w-auto inline-block"
-                  />
-                </div>
-                <div className="logo-item">
-                  <img
-                    src="/Fisher.svg"
-                    alt="Fisher Realty LLC"
-                    className="h-20 w-auto inline-block"
-                  />
-                </div>
-                <div className="logo-item">
-                  <img
-                    src="/Encore.svg"
-                    alt="Encore Realty"
-                    className="h-20 w-auto scale-65 inline-block"
-                  />
-                </div>
-                <div className="logo-item">
-                  <img
-                    src="/Roos.svg"
-                    alt="Mark Roos Realty"
-                    className="h-20 w-auto inline-block"
-                  />
-                </div>
-                <div className="logo-item">
-                  <img
-                    src="/nextgen.svg"
-                    alt="Nextgen Realty"
-                    className="h-20 w-auto inline-block"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <PartnersSection partnersRef={partnersRef} partnersInView={partnersInView} />
       {/* Services Section */}
-      <section
-        ref={servicesRef}
-        id="services"
-        className={`bg-gradient-to-br from-gray-50 via-white to-gray-100 py-24 px-6 md:px-16 relative transition-all duration-700 ease-out ${servicesInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-      >
-        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-gray-100 to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-100 to-transparent"></div>
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-left mb-20">
-            <h2 className="text-5xl font-bold text-gray-900 mb-6 font-heading">
-              Convert more with less
-            </h2>
-            <p className="text-xl text-gray-600 max-w-xl">
-              AI-powered tools that handle the heavy lifting, so your team can focus on what matters most.
-            </p>
-          </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service, i) => (
-              <div
-                key={i}
-                className={`group relative bg-white rounded-2xl p-8 shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-2 hover:border-indigo-200 cursor-pointer hover:shadow-2xl hover:scale-105`}
-                onClick={() => setOpenService(i)}
-                tabIndex={0}
-                role="button"
-                aria-label={`Read more about ${service.title}`}
-                onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setOpenService(i); }}
-              >
-                <div className={`absolute top-0 left-0 w-full h-1 bg-gradient-to-r ${service.gradient} rounded-t-2xl`}></div>
-                <div className="flex items-center mb-6">
-                  <div className={`w-12 h-12 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mr-4`}>
-                    {service.cardIcon}
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 font-heading">{service.title}</h3>
-                </div>
-                <h4 className="text-2xl font-bold text-gray-800 mb-4 font-heading">{service.subtitle}</h4>
-                <p className="text-gray-600 leading-relaxed">{service.description}</p>
-                <div className="mt-6 flex items-center text-purple-600 font-semibold">
-                  <span>{service.features[0]}</span>
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <ServicesSection servicesRef={servicesRef} servicesInView={servicesInView} services={services} openService={openService} setOpenService={setOpenService} />
       {/* Pricing Section */}
       <section
         className="relative py-16 px-4 md:px-0 bg-gradient-to-br from-gray-50 via-white to-gray-100"
@@ -480,126 +276,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Team Section */}
-      <section
-        ref={teamRef}
-        id="team"
-        className={`bg-white pt-10 pb-24 px-6 md:px-12 relative transition-all duration-700 ease-out ${teamInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-      >
-        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-gray-100 to-transparent"></div>
-        <h2 className="text-4xl font-bold text-center text-gray-800 mb-6 font-heading">
-          Meet the Team
-        </h2>
-        <p className="text-center text-gray-600 max-w-6xl mx-auto mb-16 text-lg">
-          HouseFly was created by a small team of Northeastern students who saw
-          a problem in the Boston real estate market. Most leads never convert,
-          and those that do often require dozens of back and forth messages and
-          coordination. That's why we created a platform that automates
-          comms, qualifies leads, and optimizes listings, so the human
-          agents can focus on closing deals, not managing inboxes.
-        </p>
-        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
-          {team.map((person, i) => (
-            <div
-              key={i}
-              className="relative group flex flex-col items-center text-center"
-            >
-              <img
-                src={person.image}
-                alt={person.name}
-                className="w-32 h-32 rounded-full object-cover shadow-md mb-4"
-              />
-              <h3 className="text-xl font-semibold text-gray-800 font-heading">
-                {person.name}
-              </h3>
-              <p className="text-gray-500">{person.role}</p>
-
-              {/* Hover Popup */}
-              <div className="absolute z-[999] -top-8 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-xl border border-white/30 shadow-2xl rounded-3xl p-7 w-80 opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-105 transition-all duration-300 ease-out pointer-events-none group-hover:pointer-events-auto">
-                <div className="flex flex-col items-center">
-                  <img
-                    src={person.image}
-                    alt={person.name}
-                    className="w-32 h-32 rounded-full object-cover shadow-lg ring-2 ring-gray-200 -mt-12 mb-3"
-                  />
-                  <div className="flex items-center gap-2 mb-1">
-                    <h4 className="text-2xl font-heading font-extrabold text-gray-900 tracking-tight">{person.name}</h4>
-                    <a
-                      href={person.linkedin}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-800 transition-colors"
-                      title="View LinkedIn"
-                    >
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                      </svg>
-                    </a>
-                  </div>
-                  <div className="text-gray-800 font-bold text-base mb-2">{person.role}</div>
-                  <div className="w-10 h-1 bg-gray-200 rounded-full mb-2"></div>
-                  <div className="text-gray-900 text-sm font-semibold mb-1">{person.school}</div>
-                  <div className="text-gray-700 text-xs font-semibold mb-3">{person.major}</div>
-                  <div className="bg-white/80 text-gray-900 text-sm font-bold px-4 py-2 rounded-lg leading-relaxed text-center shadow-inner">
-                    {person.blurb}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
+      <TeamSection teamRef={teamRef} teamInView={teamInView} team={team} />
       {/* Contact Section */}
-      <section
-        ref={contactRef}
-        id="contact"
-        className={`bg-gradient-to-br from-gray-50 via-white to-gray-100 py-12 px-6 md:px-12 relative transition-all duration-700 ease-out ${contactInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-      >
-        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-white to-transparent"></div>
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-4 font-heading">
-          Contact Us
-        </h2>
-        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-6 text-base">
-          Reach out anytime. We're happy to chat.
-        </p>
-        <div className="text-center text-gray-700 mb-6 space-y-1">
-          <p>
-            Email:{" "}
-            <a
-              href="houseflyoutreach@gmail.com"
-              className="text-indigo-600 hover:text-purple-600 hover:underline transition-colors"
-            >
-              houseflyoutreach@gmail.com
-            </a>
-          </p>
-          <p>
-            Phone:{" "}
-            <a
-              href="tel:+1 (617)-752-2174"
-              className="text-indigo-600 hover:text-purple-600 hover:underline transition-colors"
-            >
-              (617) 752 2174
-            </a>
-          </p>
-        </div>
-        <div className="text-center">
-          <a
-            href="https://calendly.com/milomargolis4/30min?month=2025-06"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="px-12 py-3 rounded-full bg-gradient-to-r from-[#6C63FF] via-indigo-500 to-blue-500 animate-gradient-x text-white text-lg font-bold shadow-xl border-2 border-white/30 backdrop-blur-md bg-opacity-80 ring-2 ring-blue-300/30 transition-all duration-200 hover:scale-105 hover:shadow-2xl hover:ring-4 hover:ring-blue-400/40 active:scale-97 focus:outline-none focus:ring-4 focus:ring-indigo-300 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-400/30 before:via-purple-400/20 before:to-indigo-400/30 before:blur-lg before:opacity-60 before:transition-opacity before:duration-300 before:pointer-events-none group flex items-center gap-2">
-              <span className="z-10">Book a Demo</span>
-              <svg className="w-5 h-5 transition-transform duration-200 group-hover:translate-x-1 group-hover:scale-110 group-active:scale-95" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </button>
-          </a>
-        </div>
-      </section>
-
+      <ContactSection contactRef={contactRef} contactInView={contactInView} />
       {/* Footer */}
       <footer className="bg-gray-100 text-gray-500 text-sm py-8 px-6 md:px-12 mt-0 text-center">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
@@ -613,7 +293,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-
       {/* Service Modal */}
       {openService !== null && (
         <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/40">
