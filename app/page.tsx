@@ -66,7 +66,7 @@ export default function Home() {
     },
     {
       name: "Jesse Goldberg",
-      role: "Business Development",
+      role: "Business Development", 
       image: "/person7.jpg",
       school: "Northeastern University",
       major: "Business Administration and Psychology",
@@ -421,6 +421,72 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section
+        className="relative py-16 px-4 md:px-0 bg-gradient-to-br from-gray-900 via-gray-950 to-gray-900"
+      >
+        <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-gray-950 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-gray-950 to-transparent"></div>
+        <div className="max-w-4xl mx-auto relative z-10">
+          <h2 className="text-4xl font-extrabold text-white mb-6 font-heading text-center drop-shadow-xl">Pricing</h2>
+          <p className="text-base text-gray-300 text-center mb-10 max-w-xl mx-auto font-medium">Simple, transparent pricing. Only pay for results or choose a flexible SaaS plan. No hidden fees, no surprises—just more closed deals.</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {/* Commission Split */}
+            <div className="relative bg-white/10 backdrop-blur-xl border border-white/15 rounded-2xl shadow-xl p-7 flex flex-col items-start text-left min-h-[180px] transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl group">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center shadow-lg mb-3">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-1 font-heading tracking-tight">Commission Split</h3>
+              <div className="text-2xl font-extrabold text-indigo-200 mb-1 tracking-tight">20% fee</div>
+              <div className="text-gray-200 mb-2 font-semibold text-sm">of agent's broker fee for any lead we help convert</div>
+              <ul className="text-gray-300 text-sm space-y-1 mb-0">
+                <li>• No upfront cost</li>
+                <li>• Pay only for results</li>
+                <li>• Perfect for agents & teams</li>
+              </ul>
+            </div>
+            {/* SaaS Tier */}
+            <div className="relative bg-white/10 backdrop-blur-xl border border-white/15 rounded-2xl shadow-xl p-7 flex flex-col items-start text-left min-h-[180px] transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl group">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600 to-indigo-500 flex items-center justify-center shadow-lg mb-3">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-1 font-heading tracking-tight">SaaS Tier</h3>
+              <div className="text-2xl font-extrabold text-purple-200 mb-1 tracking-tight">Custom</div>
+              <div className="text-gray-200 mb-2 font-semibold text-sm">per month for AI follow-up + dashboard</div>
+              <ul className="text-gray-300 text-sm space-y-1 mb-0">
+                <li>• Tiered by # of listings or agents</li>
+                <li>• Includes analytics dashboard</li>
+                <li>• Integrates with your CRM</li>
+              </ul>
+            </div>
+            {/* Enterprise Option */}
+            <div className="relative bg-white/10 backdrop-blur-xl border border-white/15 rounded-2xl shadow-xl p-7 flex flex-col items-start text-left min-h-[180px] transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl group">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-700 to-indigo-700 flex items-center justify-center shadow-lg mb-3">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /><path strokeLinecap="round" strokeLinejoin="round" d="M8 12h8M12 8v8" /></svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-1 font-heading tracking-tight">Enterprise</h3>
+              <div className="text-2xl font-extrabold text-blue-200 mb-1 tracking-tight">Custom</div>
+              <div className="text-gray-200 mb-2 font-semibold text-sm">For brokerages & large teams</div>
+              <ul className="text-gray-300 text-sm space-y-1 mb-0">
+                <li>• Dedicated onboarding</li>
+                <li>• Custom integrations</li>
+                <li>• Priority support</li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex justify-center mt-10">
+            <a href="https://calendly.com/milomargolis4/30min?month=2025-06" target="_blank" rel="noopener noreferrer">
+              <button className="px-8 py-2 rounded-full bg-gradient-to-r from-indigo-600 via-blue-600 to-purple-600 text-white text-base font-bold shadow-lg border-2 border-white/10 backdrop-blur-md bg-opacity-80 ring-2 ring-blue-300/20 transition-all duration-200 hover:scale-105 hover:shadow-2xl hover:ring-4 hover:ring-blue-400/30 active:scale-97 focus:outline-none focus:ring-4 focus:ring-indigo-300 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-400/20 before:via-purple-400/10 before:to-indigo-400/20 before:blur-lg before:opacity-60 before:transition-opacity before:duration-300 before:pointer-events-none flex items-center gap-2">
+                <span className="z-10">Book a Demo</span>
+                <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1 group-hover:scale-110 group-active:scale-95" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </button>
+            </a>
           </div>
         </div>
       </section>
