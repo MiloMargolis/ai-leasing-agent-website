@@ -4,11 +4,11 @@ export default function Home() {
   const team = [
     {
       name: "Milo Margolis",
-      role: "Founder",
+      role: "Founder & CEO",
       image: "/person1.jpg",
       school: "Northeastern University",
       major: "Computer Science + AI",
-      blurb: "Data Engineering @ Loper, Product @ Cranium AI",
+      blurb: "Solutions Engineering @ Cranium AI, Data Engineering @ Loper",
       linkedin: "https://www.linkedin.com/in/milo-margolis/"
     },
     {
@@ -17,7 +17,7 @@ export default function Home() {
       image: "/person2.jpg",
       school: "Northeastern University",
       major: "Business Administration",
-      blurb: "Financial Analyst @ UBS, Piraeus Bank",
+      blurb: "Financial Analyst @ UBS, Investment Banking @ Piraeus Bank",
       linkedin: "https://www.linkedin.com/in/rowan-frew-b50806237/"
     },
     {
@@ -26,7 +26,7 @@ export default function Home() {
       image: "/person3.jpg",
       school: "Northeastern University",
       major: "Industrial Engineering",
-      blurb: "R&D @ MATT Energy and Bourdal",
+      blurb: "R&D @ MATT Energy, Marketing & Growth @ Bourdal",
       linkedin: "https://www.linkedin.com/in/david-rooney-work876/"
     },
 
@@ -36,7 +36,7 @@ export default function Home() {
       image: "/person4.jpg",
       school: "Northeastern University",
       major: "Computer Science + AI",
-      blurb: "Software engineering @ Harvard and NEXT",
+      blurb: "Software Engineering @ Harvard, Software Consulting @ NEXT",
       linkedin: "https://www.linkedin.com/in/joshua-francis-segal/"
     },
     {
@@ -45,7 +45,7 @@ export default function Home() {
       image: "/person5.jpg",
       school: "Northeastern University",
       major: "Computer Science + AI",
-      blurb: "Software Engineering @ KKR and Flexcarr",
+      blurb: "Software Engineering @ KKR & Flexcar",
       linkedin: "https://www.linkedin.com/in/lubainamalvi/"
     },
     {
@@ -54,7 +54,7 @@ export default function Home() {
       image: "/person6.jpg",
       school: "Northeastern University",
       major: "Computer Science + AI",
-      blurb: "Software engineering @ Chourus",
+      blurb: "Software Engineering @ Chourus",
       linkedin: "https://www.linkedin.com/in/willem-shak/"
     },
     {
@@ -63,7 +63,7 @@ export default function Home() {
       image: "/person7.jpg",
       school: "Northeastern University",
       major: "Business Administration and Psychology",
-      blurb: "Business Operations and Strategy @ EazyDone",
+      blurb: "Business Operations & Strategy @ EazyDone",
       linkedin: "https://www.linkedin.com/in/jesse-goldberg-175b76293/"
     },
   ];
@@ -434,25 +434,34 @@ export default function Home() {
               <p className="text-gray-500">{person.role}</p>
 
               {/* Hover Popup */}
-              <div className="absolute z-20 -top-8 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-md shadow-2xl border border-gray-100 rounded-3xl p-7 w-80 opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-105 transition-all duration-300 ease-out pointer-events-none group-hover:pointer-events-auto">
+              <div className="absolute z-30 -top-8 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-xl border border-white/30 shadow-2xl rounded-3xl p-7 w-80 opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-105 transition-all duration-300 ease-out pointer-events-none group-hover:pointer-events-auto">
                 <div className="flex flex-col items-center">
                   <img
                     src={person.image}
                     alt={person.name}
-                    className="w-34 h-34 rounded-full object-cover shadow-lg ring-2 ring-gray-200 -mt-12 mb-3"
+                    className="w-32 h-32 rounded-full object-cover shadow-lg ring-2 ring-gray-200 -mt-12 mb-3"
                   />
-                  <div className="flex items-center space-x-2 mb-1">
-                    <h4 className="text-2xl font-bold text-gray-900 tracking-tight font-heading">{person.name}</h4>
-                    <a href={person.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 transition-colors">
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center gap-2 mb-1">
+                    <h4 className="text-2xl font-heading font-extrabold text-gray-900 tracking-tight">{person.name}</h4>
+                    <a
+                      href={person.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-800 transition-colors"
+                      title="View LinkedIn"
+                    >
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                       </svg>
                     </a>
                   </div>
-                  <span className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full mb-2">{person.role}</span>
-                  <div className="text-gray-600 text-sm font-medium mb-1">{person.school}</div>
-                  <div className="text-gray-500 text-xs mb-3">{person.major}</div>
-                  {/* <div className="bg-gray-50 text-gray-700 text-sm px-4 py-2 rounded-lg leading-relaxed text-center">{person.blurb}</div> */}
+                  <div className="text-gray-800 font-bold text-base mb-2">{person.role}</div>
+                  <div className="w-10 h-1 bg-gray-200 rounded-full mb-2"></div>
+                  <div className="text-gray-900 text-sm font-semibold mb-1">{person.school}</div>
+                  <div className="text-gray-700 text-xs font-semibold mb-3">{person.major}</div>
+                  <div className="bg-white/80 text-gray-900 text-sm font-bold px-4 py-2 rounded-lg leading-relaxed text-center shadow-inner">
+                    {person.blurb}
+                  </div>
                 </div>
               </div>
             </div>
