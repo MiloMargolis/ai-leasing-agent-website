@@ -446,7 +446,7 @@ export default function Home() {
           a problem in the Boston real estate market. Most leads never convert,
           and those that do often require dozens of back and forth messages and
           coordination. That's why we created a platform that automates
-          communication, qualifies leads, and optimizes listings, so the human
+          comms, qualifies leads, and optimizes listings, so the human
           agents can focus on closing deals, not managing inboxes.
         </p>
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center">
