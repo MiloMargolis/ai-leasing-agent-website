@@ -478,16 +478,6 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          <div className="flex justify-center mt-10">
-            <a href="https://calendly.com/milomargolis4/30min?month=2025-06" target="_blank" rel="noopener noreferrer">
-              <button className="px-8 py-2 rounded-full bg-gradient-to-r from-gray-700 to-gray-800 text-white text-base font-bold shadow-lg border border-gray-600 transition-all duration-200 hover:scale-105 hover:shadow-xl hover:from-gray-600 hover:to-gray-700 active:scale-97 focus:outline-none focus:ring-2 focus:ring-gray-400 flex items-center gap-2">
-                <span>Book a Demo</span>
-                <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1 group-hover:scale-110 group-active:scale-95" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </button>
-            </a>
-          </div>
         </div>
       </section>
 
