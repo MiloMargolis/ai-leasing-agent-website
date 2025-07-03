@@ -247,7 +247,7 @@ export default function Home() {
             AI Powered Leasing Agent
           </h1>
           <p className="text-white text-3xl md:text-3xl font-large font-bold mt-6 max-w-4xl drop-shadow-2xl">
-            Qualify leads, automate conversations, and handle follow-ups — so
+            Qualify leads, automate conversations, and handle follow-ups, so
             human agents can focus on closing.
           </p>
           <a
