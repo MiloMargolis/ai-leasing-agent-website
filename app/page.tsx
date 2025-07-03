@@ -20,7 +20,7 @@ export default function Home() {
   const team = [
     {
       name: "Milo Margolis",
-      role: "Founder & CEO",
+      role: "Founder",
       image: "/person1.jpg",
       school: "Northeastern University",
       major: "Computer Science + AI",
@@ -433,7 +433,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-gray-100 to-transparent"></div>
         <div className="max-w-4xl mx-auto relative z-10">
           <h2 className="text-4xl font-extrabold text-gray-900 mb-6 font-heading text-center">Pricing</h2>
-          <p className="text-base text-gray-600 text-center mb-10 max-w-xl mx-auto font-medium">Simple, transparent pricing. Only pay for results or choose a flexible SaaS plan. No hidden fees, no surprises—just more closed deals.</p>
+          <p className="text-base text-gray-600 text-center mb-10 max-w-xl mx-auto font-medium">Simple, transparent pricing. Only pay for results or choose a flexible SaaS plan. No hidden fees or no surprises; just more closed deals.</p>
           <div className="grid md:grid-cols-3 gap-6">
             {/* Commission Split */}
             <div className="relative bg-white border border-gray-200 rounded-2xl shadow-xl p-7 flex flex-col items-start text-left min-h-[180px] transition-transform duration-200 hover:-translate-y-1 hover:shadow-2xl group">
@@ -480,8 +480,8 @@ export default function Home() {
           </div>
           <div className="flex justify-center mt-10">
             <a href="https://calendly.com/milomargolis4/30min?month=2025-06" target="_blank" rel="noopener noreferrer">
-              <button className="px-8 py-2 rounded-full bg-gradient-to-r from-indigo-600 via-blue-600 to-purple-600 text-white text-base font-bold shadow-lg border-2 border-white/10 backdrop-blur-md bg-opacity-80 ring-2 ring-blue-300/20 transition-all duration-200 hover:scale-105 hover:shadow-2xl hover:ring-4 hover:ring-blue-400/30 active:scale-97 focus:outline-none focus:ring-4 focus:ring-indigo-300 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-400/20 before:via-purple-400/10 before:to-indigo-400/20 before:blur-lg before:opacity-60 before:transition-opacity before:duration-300 before:pointer-events-none flex items-center gap-2">
-                <span className="z-10">Book a Demo</span>
+              <button className="px-8 py-2 rounded-full bg-gradient-to-r from-gray-700 to-gray-800 text-white text-base font-bold shadow-lg border border-gray-600 transition-all duration-200 hover:scale-105 hover:shadow-xl hover:from-gray-600 hover:to-gray-700 active:scale-97 focus:outline-none focus:ring-2 focus:ring-gray-400 flex items-center gap-2">
+                <span>Book a Demo</span>
                 <svg className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1 group-hover:scale-110 group-active:scale-95" fill="none" stroke="currentColor" strokeWidth={2.2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
