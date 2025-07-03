@@ -65,15 +65,6 @@ export default function Home() {
       linkedin: "https://www.linkedin.com/in/lubainamalvi/"
     },
     {
-      name: "Willem Shak",
-      role: "Engineering",
-      image: "/person6.jpg",
-      school: "Northeastern University",
-      major: "Computer Science + AI",
-      blurb: "Software Engineering @ Chourus",
-      linkedin: "https://www.linkedin.com/in/willem-shak/"
-    },
-    {
       name: "Jesse Goldberg",
       role: "Business Development",
       image: "/person7.jpg",
@@ -81,6 +72,15 @@ export default function Home() {
       major: "Business Administration and Psychology",
       blurb: "Business Operations & Strategy @ EazyDone",
       linkedin: "https://www.linkedin.com/in/jesse-goldberg-175b76293/"
+    },
+    {
+      name: "Willem Shak",
+      role: "Engineering",
+      image: "/person6.jpg",
+      school: "Northeastern University",
+      major: "Computer Science + AI",
+      blurb: "Software Engineering @ Chourus",
+      linkedin: "https://www.linkedin.com/in/willem-shak/"
     },
   ];
 
