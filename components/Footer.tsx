@@ -11,6 +11,7 @@ const Footer: React.FC = () => (
         <a href="#team" className="hover:text-indigo-600 transition-colors">Team</a>
         <a href="#contact" className="hover:text-indigo-600 transition-colors">Contact</a>
         <a href="/privacy" className="hover:text-indigo-600 transition-colors">Privacy Policy</a>
+        <a href="/terms" className="hover:text-indigo-600 transition-colors">Terms</a>
       </div>
     </div>
   </footer>

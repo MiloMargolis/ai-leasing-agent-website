@@ -12,63 +12,34 @@ export default function PrivacyPolicy() {
 
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6">
-              HouseFly AI ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information when you interact with our services, including through SMS, our website (https://www.houseflyai.com), and other communication channels.
+              HouseFly AI values your privacy. We collect and store personal information only to support communication between real estate agents and prospective renters or buyers.
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Information We Collect</h2>
-            <p className="text-gray-700 mb-4">We may collect the following types of information:</p>
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">What We Collect</h2>
             <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-              <li><strong>Contact Information:</strong> Such as your name, phone number, and email address.</li>
-              <li><strong>Message Content:</strong> When you communicate with HouseFly AI via SMS or other means.</li>
-              <li><strong>Usage Information:</strong> Log data and usage patterns related to our messaging services.</li>
-              <li><strong>Device Information:</strong> Basic metadata such as IP address or device type.</li>
+              <li>Phone numbers</li>
+              <li>Messages you send or receive</li>
+              <li>Basic metadata (e.g., timestamps, message routing)</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">2. How We Use Your Information</h2>
-            <p className="text-gray-700 mb-4">We use your information to:</p>
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">How We Use It</h2>
             <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-              <li>Provide real estate-related information and services on behalf of agents.</li>
-              <li>Respond to your questions or messages.</li>
-              <li>Improve and analyze our services.</li>
-              <li>Ensure compliance with legal and carrier regulations.</li>
+              <li>To qualify leads and respond to real estate inquiries</li>
+              <li>To schedule tours or share listing info</li>
+              <li>To improve assistant functionality</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">3. Sharing of Information</h2>
-            <p className="text-gray-700 mb-4">We do not sell your personal information. We may share information with:</p>
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Your Rights</h2>
             <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-              <li>Real estate agents we are assisting to help qualify or follow up with leads.</li>
-              <li>Service providers who support our technology infrastructure (e.g., SMS platforms).</li>
-              <li>Law enforcement or regulators when required by law.</li>
+              <li>You may opt out of communication at any time by replying STOP</li>
+              <li>Your mobile information will not be sold or shared with third parties for promotional or marketing purposes</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">4. Your Choices</h2>
-            <p className="text-gray-700 mb-6">
-              You can opt out of SMS communications at any time by replying "STOP". If you have questions about your data, contact us at{" "}
+            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Contact</h2>
+            <div className="bg-gray-50 p-4 rounded-lg">
               <a href="mailto:houseflyoutreach@gmail.com" className="text-indigo-600 hover:text-indigo-800 underline">
                 houseflyoutreach@gmail.com
-              </a>.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">5. Data Security</h2>
-            <p className="text-gray-700 mb-6">
-              We take reasonable precautions to protect your data, including secure storage and limited access.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">6. Changes to This Policy</h2>
-            <p className="text-gray-700 mb-6">
-              We may update this Privacy Policy from time to time. Changes will be posted on this page with a new effective date.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">7. Contact Us</h2>
-            <p className="text-gray-700 mb-4">If you have any questions about this Privacy Policy, you can contact us at:</p>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <p className="text-gray-700 font-semibold">HouseFly AI</p>
-              <p className="text-gray-700">
-                Email:{" "}
-                <a href="mailto:houseflyoutreach@gmail.com" className="text-indigo-600 hover:text-indigo-800 underline">
-                  houseflyoutreach@gmail.com
-                </a>
-              </p>
+              </a>
             </div>
           </div>
 
