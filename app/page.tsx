@@ -5,6 +5,7 @@ import PartnersSection from "../components/PartnersSection";
 import ServicesSection from "../components/ServicesSection";
 import TeamSection from "../components/TeamSection";
 import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 // Simple in-view hook for fade/slide-in
 function useInView<T extends HTMLElement = HTMLElement>(threshold = 0.15): [React.RefObject<T | null>, boolean] {
@@ -281,18 +282,7 @@ export default function Home() {
       {/* Contact Section */}
       <ContactSection contactRef={contactRef} contactInView={contactInView} />
       {/* Footer */}
-      <footer className="bg-gray-100 text-gray-500 text-sm py-8 px-6 md:px-12 mt-0 text-center">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <div>&copy; {new Date().getFullYear()} HouseFly. All rights reserved.</div>
-          <div className="flex gap-4 justify-center md:justify-end">
-            <a href="#" className="hover:text-indigo-600 transition-colors">Home</a>
-            <a href="#partners" className="hover:text-indigo-600 transition-colors">Partners</a>
-            <a href="#services" className="hover:text-indigo-600 transition-colors">Services</a>
-            <a href="#team" className="hover:text-indigo-600 transition-colors">Team</a>
-            <a href="#contact" className="hover:text-indigo-600 transition-colors">Contact</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
       {/* Service Modal */}
       {openService !== null && (
         <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/40">
