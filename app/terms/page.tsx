@@ -11,20 +11,20 @@ export default function TermsAndConditions() {
 
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6">
-              By using HouseFly AI, you agree to the following terms:
+              By messaging HouseFly AI, you consent to receive SMS messages related to your real estate inquiry.
             </p>
 
-            <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-3">
-              <li>You consent to receive SMS messages related to real estate assistance, scheduling, and listing details.</li>
-              <li>Message frequency may vary. Standard messaging rates may apply.</li>
-              <li>You can opt out at any time by replying STOP. For help, reply HELP.</li>
-              <li>You understand that responses may be powered by automated systems or AI, with oversight by licensed agents.</li>
-              <li>This service is informational and does not constitute a legal or contractual obligation between HouseFly AI and the user.</li>
-            </ul>
+            <p className="text-gray-700 mb-6">
+              Message frequency may vary. Standard message and data rates may apply.
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              Consent is not a condition of any purchase or service. You can opt out anytime by replying STOP.
+            </p>
 
             <div className="bg-gray-50 p-4 rounded-lg">
               <p className="text-gray-700">
-                For any questions, contact{" "}
+                For questions, reply HELP or email{" "}
                 <a href="mailto:houseflyoutreach@gmail.com" className="text-indigo-600 hover:text-indigo-800 underline">
                   houseflyoutreach@gmail.com
                 </a>.

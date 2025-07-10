@@ -11,30 +11,31 @@ export default function OptInSuccess() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-4">You've Successfully Opted In</h1>
+            <h1 className="text-3xl font-bold text-gray-900 mb-4">SMS Consent Confirmation</h1>
           </div>
 
           <div className="prose prose-lg max-w-none text-left">
             <p className="text-gray-700 mb-6">
-              By joining a conversation with a real estate agent using HouseFly AI, you've agreed to receive SMS messages related to property listings, scheduling tours, and general real estate assistance.
+              Thanks for starting a conversation with HouseFly AI!
+            </p>
+
+            <p className="text-gray-700 mb-6">
+              By messaging our number, you agree to receive SMS updates about property details, showing times, and rental coordination.
             </p>
 
             <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
               <p className="text-blue-800 text-sm">
-                <strong>Message frequency may vary.</strong> Message and data rates may apply. Reply STOP at any time to unsubscribe, or HELP for more information.
+                <strong>Message frequency may vary.</strong> Standard message and data rates may apply.
               </p>
             </div>
 
             <p className="text-gray-700 mb-6">
-              Your mobile information will not be sold or shared with third parties for promotional or marketing purposes.
+              Reply STOP to unsubscribe at any time. Reply HELP for assistance.
             </p>
 
             <div className="bg-gray-50 p-4 rounded-lg">
               <p className="text-gray-700">
-                <strong>Questions?</strong> Contact us at{" "}
-                <a href="mailto:houseflyoutreach@gmail.com" className="text-indigo-600 hover:text-indigo-800 underline">
-                  houseflyoutreach@gmail.com
-                </a>
+                We do not sell or share your phone number for marketing purposes.
               </p>
             </div>
           </div>

@@ -7,39 +7,32 @@ export default function PrivacyPolicy() {
         <div className="bg-white shadow-lg rounded-lg p-8 md:p-12">
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
-            <p className="text-gray-600">Effective Date: July 8, 2025</p>
           </div>
 
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 mb-6">
-              HouseFly AI values your privacy. We collect and store personal information only to support communication between real estate agents and prospective renters or buyers.
+              HouseFly AI respects your privacy.
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">What We Collect</h2>
-            <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-              <li>Phone numbers</li>
-              <li>Messages you send or receive</li>
-              <li>Basic metadata (e.g., timestamps, message routing)</li>
-            </ul>
+            <p className="text-gray-700 mb-6">
+              We do not share or sell your mobile phone number or any personal information with third parties for promotional or marketing purposes.
+            </p>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">How We Use It</h2>
-            <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-              <li>To qualify leads and respond to real estate inquiries</li>
-              <li>To schedule tours or share listing info</li>
-              <li>To improve assistant functionality</li>
-            </ul>
+            <p className="text-gray-700 mb-6">
+              When you message our service, your number is used only to assist with rental coordination and communication with your agent.
+            </p>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Your Rights</h2>
-            <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
-              <li>You may opt out of communication at any time by replying STOP</li>
-              <li>Your mobile information will not be sold or shared with third parties for promotional or marketing purposes</li>
-            </ul>
+            <p className="text-gray-700 mb-6">
+              If you wish to stop receiving messages, reply STOP at any time.
+            </p>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Contact</h2>
             <div className="bg-gray-50 p-4 rounded-lg">
-              <a href="mailto:houseflyoutreach@gmail.com" className="text-indigo-600 hover:text-indigo-800 underline">
-                houseflyoutreach@gmail.com
-              </a>
+              <p className="text-gray-700">
+                For help, reply HELP or contact{" "}
+                <a href="mailto:houseflyoutreach@gmail.com" className="text-indigo-600 hover:text-indigo-800 underline">
+                  houseflyoutreach@gmail.com
+                </a>.
+              </p>
             </div>
           </div>
 
