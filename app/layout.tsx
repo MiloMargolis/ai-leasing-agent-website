@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: "HouseFly AI",
     images: [
       {
-        url: "/Logo.png",
+        url: "/paste_logo.png",
         width: 400,
         height: 400,
         alt: "HouseFly AI Logo",
