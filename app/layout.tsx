@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/paste_logo.png",
-        width: 400,
-        height: 400,
+        width: 1200,
+        height: 630,
         alt: "HouseFly AI Logo",
       },
     ],
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "HouseFly AI",
     description: "Automated lead management and follow-up for real estate agents.",
-    images: ["/Logo.png"],
+    images: ["/paste_logo.png"],
     site: "@houseflyai",
   },
   robots: {
