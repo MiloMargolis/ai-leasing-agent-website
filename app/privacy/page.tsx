@@ -38,6 +38,9 @@ export default function PrivacyPolicy() {
 
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Information Sharing and Disclosure</h2>
             <p className="text-gray-700 mb-4">We do not sell, rent, or trade your personal information to third parties for marketing purposes. We may share your information in the following limited circumstances:</p>
+            <p className="text-gray-700 mb-6">
+              We do not share mobile subscriber information (including phone numbers, opt-in data, or consent) with third parties for marketing or promotional purposes. Subscriber information is only shared with subcontractors or service providers solely for the purpose of enabling our services (e.g., SMS delivery or customer support).
+            </p>
             <ul className="list-disc pl-6 text-gray-700 mb-6 space-y-2">
               <li><strong>Real Estate Agents:</strong> We share relevant information with agents to assist with your real estate needs</li>
               <li><strong>Service Providers:</strong> We work with trusted third-party providers who help us deliver our service (SMS platforms, hosting services)</li>
